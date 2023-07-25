@@ -4,77 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>毛友農場Furry Friend</title>
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="https://kit.fontawesome.com/82d8748d0e.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Work+Sans&display=swap" rel="stylesheet">
     <style>
-        header {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            background-color: #F2F0E4;
-            border-top: 5px solid #C7A88C;
-            position: fixed;
-            z-index: 1;
-        }
-       
-        a:hover,
-        a:visited,
-        a:link,
-        a:active {
-            text-decoration: none;
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            color: #401403;
-        }
-        .main-menu {
-            list-style: none;
-            display:flex;
-            flex-wrap: wrap;
-            flex-direction: row-reverse;
-            gap: 27px;
-            padding: 10px 40px;
-        }
-        .main-menu li{
-            position: relative;
-        }
-        .main-menu li a{
-            display: block;
-            font-family: 'Inter', sans-serif;
-            color: #401403;
-            font-weight: 400;
-            font-size: 18px;
-        }
-        .sub-menu{
-            list-style: none;
-            position: absolute; 
-            /* display: none;  */
-            
-        }
-
-        .sub-menu li{
-            min-height: 30px;
-            width: 100px;
-            padding: 3px;
-            text-align:center;
-            background-color: #F2F0E4;
-        }
-        .sub-menu li a{
-            display:block;
-            font-family: 'Inter', sans-serif;
-            color: #401403;
-            font-weight: 400;
-            font-size: 18px;
-        }
-        li:hover .sub-menu{
-            display: block;
-        }
-        header img{
-            padding-left: 40px;
-        }
 
         main {
             width: 1200px;
@@ -167,44 +103,13 @@
             object-position: 50% 50%;
         }
 
-        footer {
-            width: 100%;
-            height: 200px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #985E3F;
-        }
-        footer p{
-            padding:0px;
-            color: #fff;
-        }
-        .information{
-            width: 260px;
-        }
-        .fllow{
-            width: 340px;
-        }
-        .fllow-icon{
-            width: 180px;
-            margin: 10px 0px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:space-between;
-        }
-        label{
-            color: #fff;
-            display: block;
-            margin-bottom: 6px;
-        }
 
     </style>
 </head>
 
 <body>
     <header>
-        <img src=nav-bar-logo.svg alt="logo">
+        <img src="img/nav-bar-logo.svg" alt="logo">
             <ul class="main-menu" >
                 <li><a href="#"><i class="fa-solid fa-user-gear" style="color: #401403;"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a></li>
@@ -218,7 +123,7 @@
                         <li><a href="#">衣著裝備</a></li>
                     </ul>
                 </li>    
-                <li><a href="../page-experience/page-experience.html">農場體驗</a>
+                <li><a href="page-experience.html">農場體驗</a>
                     <ul class="sub-menu">
                         <li><a href="#">手作小物</a></li>
                         <li><a href="#">露營區</a></li>
@@ -232,7 +137,7 @@
                         <li><a href="#">附近景點</a></li>
                     </ul>
                 </li>
-                <li><a href="../page-home/page-home.html">回首頁</a>
+                <li><a href="page-home.html">回首頁</a>
                     <ul class="sub-menu">
                         <li><a href="#">毛友們</a></li>
                         <li><a href="#">農場特色</a></li>
@@ -246,7 +151,7 @@
                 <span>園區地圖</span>
                 <div>PARK MAP</div>
             </h1>
-            <img class="map" src="img-map.jpg" alt="園區地圖">
+            <img class="map" src="img/img-map.jpg" alt="園區地圖">
         </section>
         <section>
             <h1>
@@ -259,7 +164,7 @@
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13685.757348289531!2d121.06782399818431!3d24.696348814517716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468489976ce8013%3A0xd08b70c22d5fd338!2z57ag5LiW55WM55Sf5oWL6L6y5aC0!5e0!3m2!1szh-TW!2stw!4v1690193393829!5m2!1szh-TW!2stw"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <img class="decoration" src="decoration-img-traffic01.png" alt="裝飾">
+                <img class="decoration" src="img/decoration-img-traffic01.png" alt="裝飾">
             </div>
             <div class="parking">
                 <h2>停車場資訊</h2>
@@ -274,7 +179,7 @@
                         </p>
                     </li>
                     <ul>
-                        <img class="decoration" src="decoration-img-traffic02.png" alt="裝飾">
+                        <img class="decoration" src="img/decoration-img-traffic02.png" alt="裝飾">
             </div>
             <div class="bus">
                 <h2>大眾交通工具</h2>
@@ -293,7 +198,7 @@
                         </p>
                     </li>
                     <ul>
-                        <img class="decoration" src="decoration-img-traffic03.png" alt="裝飾">
+                        <img class="decoration" src="img/decoration-img-traffic03.png" alt="裝飾">
             </div>
         </section>
         <section>
@@ -303,42 +208,41 @@
             </h1>
             <div class="waterfall">
                 <div class="item">
-                    <img src="view1.jpg" alt="">
+                    <img src="img/view1.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="view2.jpg" alt="">
+                    <img src="img/view2.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="view3.jpg" alt="">
+                    <img src="img/view3.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="view4.jpg" alt="">
+                    <img src="img/view4.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="view5.jpg" alt="">
+                    <img src="page-about.html" alt="">
                 </div>
                 <div class="item">
-                    <img src="view6.jpg" alt="">
+                    <img src="img/view6.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="view7.jpg" alt="">
+                    <img src="img/view7.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="view8.jpg" alt="">
+                    <img src="img/view8.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="view9.jpg" alt="">
+                    <img src="img/view9.jpg" alt="">
                 </div>
                 <div class="item">
-                    <img src="view10.jpg" alt="">
+                    <img src="img/view10.jpg" alt="">
                 </div>
             </div>
         </section>
     </main>
 
-
     <footer>
-        <img src="../footer-logo.svg" alt="LOGO">
+        <img src="img/footer-logo.svg" alt="LOGO">
         <div class="information">
             <p>
                 電話：03-367-2888<br>
@@ -365,9 +269,10 @@
             <label for="email">訂閱我們 SUBSCRIBE US</label>
                 <input type="email" id="email"
                  pattern=".+@globex\.com" size="30" required>
-
+    
         </div>
     </footer>
+    
 </body>
 
 </html>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>毛友農場Furry Friend</title>
+    <link rel="stylesheet" href="CSS/style.css">
     <script src="https://kit.fontawesome.com/82d8748d0e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,11 @@
         width: 244px; 
     }
     
+    header img{
+        display: none;
+    }
+    /* 目錄header還再調整 */
+
     .nav-title{
         width: 381px;
         color: #FFF;
@@ -136,44 +141,13 @@
         border-radius: 18px;
         border: 1px solid #000;
     }
-    footer {
-            width: 100%;
-            height: 200px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            background-color: #985E3F;
-        }
-        footer p{
-            padding:0px;
-            color: #fff;
-        }
-        .information{
-            width: 260px;
-        }
-        .fllow{
-            width: 340px;
-        }
-        .fllow-icon{
-            width: 180px;
-            margin: 10px 0px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content:space-between;
-        }
-        label{
-            color: #fff;
-            display: block;
-            margin-bottom: 6px;
-        }
+    
 </style>
 </head>
 <body>
-    <div class="wrap">  
     <header>
         <div>
-            <img src="nav-logo.png" alt="">
+            <img src="img/nav-logo.png" alt="">
             <p class="nav-title">Feeding the future.</p>
             <p class="nav-summary">始終堅持天然純淨的理念，與環境共生、與生態共榮；敬天地，護自然 ，邀請您一起，堅持初衷，擇善共好。</p>
         </div>
@@ -182,20 +156,20 @@
                     <li><a href="#">會員登入</a></li>
                     <li><a href="#">購物車</a></li>
                     <li><a href="#">購票資訊</a></li>
-                    <li><a href="../page-experience/page-experience.html">農場體驗</a></li>
-                    <li><a href="../page-about/page-about.html">關於農場</a></li>
+                    <li><a href="page-experience.html">農場體驗</a></li>
+                    <li><a href="page-about.html">關於農場</a></li>
                 </ul>
                 <span>目錄</span>
                 <span>/Contents</span>
             </nav>
             <button class="nav-img">
-                <img src="nav-img01.jpg" alt="">
+                <img src="img/nav-img01.jpg" alt="">
             </button>
             <button class="nav-img">
-                <img src="nav-img02.jpg" alt="">
+                <img src="img/nav-img02.jpg" alt="">
             </button>
             <button class="nav-img">
-                <img src="nav-img03.jpg" alt="">
+                <img src="img/nav-img03.jpg" alt="">
             </button>
 
     </header>
@@ -208,7 +182,7 @@
                 <div class="animal">
                 <div class="animal-card">
                     <span class="number">01</span>
-                    <img src="main-img-sheep.jpg" alt="瓦萊黑鼻羊">
+                    <img src="img/main-img-sheep.jpg" alt="瓦萊黑鼻羊">
                     <div>
                         <h2 name="animal-name">瓦萊黑鼻羊</h2>
                         <span class="name-ch">笑笑羊</span>
@@ -223,7 +197,7 @@
                 </div>
                 <div class="animal-card">
                     <span>02</span>
-                    <img src="main-img-capybara.jpg" alt="南美水豚">
+                    <img src="img/main-img-capybara.jpg" alt="南美水豚">
                     <div>
                         <h2 name="animal-name">南美水豚</h2>
                         <span class="name-ch">波波</span>
@@ -237,7 +211,7 @@
                 </div>
                 <div class="animal-card">
                     <span>03</span>
-                    <img src="main-img-otter.jpg" alt="小爪水獺">
+                    <img src="img/main-img-otter.jpg" alt="小爪水獺">
                     <div>
                         <h2 name="animal-name">小爪水獺</h2>
                         <span class="name-ch">奧利弗</span>
@@ -251,7 +225,7 @@
                 </div>
                 <div class="animal-card">
                     <span>04</span>
-                    <img src="main-img-meerkat.jpg" alt="狐蒙">
+                    <img src="img/main-img-meerkat.jpg" alt="狐蒙">
                     <div>
                         <h2 name="animal-name">狐蒙</h2>
                         <span class="name-ch">丁滿</span>
@@ -265,7 +239,7 @@
                 </div>
                 <div class="animal-card">
                     <span>05</span>
-                    <img src="main-img-owl.jpg" alt="鵰鴞">
+                    <img src="img/main-img-owl.jpg" alt="鵰鴞">
                     <div>
                         <h2 name="animal-name">鵰鴞</h2>
                         <span class="name-ch">雷諾</span>
@@ -279,7 +253,7 @@
                 </div>
                 <div class="animal-card">
                     <span>06</span>
-                    <img src="main-img-toucan.jpg" alt="托哥巨嘴鳥">
+                    <img src="img/main-img-toucan.jpg" alt="托哥巨嘴鳥">
                     <div>
                     <h2 name="animal-name">托哥巨嘴鳥</h2>
                         <span class="name-ch">大嘴鳥</span>
@@ -310,8 +284,8 @@
                                 </button>
                             </div>
                             <div>
-                                <img src="main-img-bbq.jpg" alt="BBQ">
-                                <img src="decoration-img-capybara01.png" alt="水豚裝飾">
+                                <img src="img/main-img-bbq.jpg" alt="BBQ">
+                                <img src="img/decoration-img-capybara01.png" alt="水豚裝飾">
                             </div>
                         </div>
                         <div class="farm-card">
@@ -325,8 +299,8 @@
                                 </button>
                             </div>
                             <div>
-                                <img src="main-img-sunflower.jpg" alt="向日葵花田">
-                                <img src="decoration-img-capybara02.png" alt="水豚裝飾">
+                                <img src="img/main-img-sunflower.jpg" alt="向日葵花田">
+                                <img src="img/decoration-img-capybara02.png" alt="水豚裝飾">
                             </div>
                         </div>
                     <div class="farm-card">
@@ -340,8 +314,8 @@
                             </button>
                         </div>
                         <div>
-                            <img src="main-img-garden.jpg" alt="蔬果">
-                            <img src="decoration-img-capybara03.png" alt="水豚裝飾">
+                            <img src="img/main-img-garden.jpg" alt="蔬果">
+                            <img src="img/decoration-img-capybara03.png" alt="水豚裝飾">
                         </div>
                     </div>
                     <div class="farm-card">
@@ -355,15 +329,15 @@
                             </button>
                         </div>
                         <div>
-                            <img src="main-img-restautant.jpg" alt="餐廳">
-                            <img src="decoration-img-capybara04.png" alt="水豚裝飾">
+                            <img src="img/main-img-restautant.jpg" alt="餐廳">
+                            <img src="img/decoration-img-capybara04.png" alt="水豚裝飾">
                         </div>
                     </div>
                 </div> 
             </section>
     </main>
     <footer>
-        <img src="../footer-logo.svg" alt="LOGO">
+        <img src="img/footer-logo.svg" alt="LOGO">
         <div class="information">
             <p>
                 電話：03-367-2888<br>
@@ -390,9 +364,8 @@
             <label for="email">訂閱我們 SUBSCRIBE US</label>
                 <input type="email" id="email"
                  pattern=".+@globex\.com" size="30" required>
-
+    
         </div>
-    </footer>
-  </div>  
+    </footer> 
 </body>
 </html>
