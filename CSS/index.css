@@ -4,7 +4,7 @@ header{
     width:100%;
     min-height: 900px;
     position: relative; 
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0);
     background-image: url(/img/nav-img01.jpg) ;
     background-attachment: scroll;
     background-position: center;
