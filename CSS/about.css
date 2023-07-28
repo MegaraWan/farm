@@ -1,0 +1,86 @@
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 900px;
+}
+
+iframe {
+    width: 900px;
+}
+
+.parking, .bus {
+    width: 889px;
+    min-height: 540px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 5px 5px 0px 2px #ADE2E6;
+    border-radius: 10px;
+    margin: 150px 50px;
+    padding: 50px;
+}
+.parking ul, .bus ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h2 {
+    margin: 0px 0px 50px;
+}
+
+h3 {
+    width: 200px;
+    padding: 0;
+    margin: 22px 0px;
+}
+
+p {
+    width: 660px;
+    padding: 0px 0px 30px;
+    right: 0;
+    left: 0;
+    margin: auto
+}
+
+.google,
+.parking,
+.bus {
+    position: relative;
+}
+
+.decoration {
+    position: absolute;
+    bottom: -40px;
+    right: -60px;
+}
+
+.google .decoration {
+    left: -80px;
+}
+
+.waterfall {
+
+}
+
+.item {
+    box-sizing: border-box;
+    margin: 0 auto 5px;
+}
+
+.item img {
+    width: 100%;
+    object-fit: cover;
+}

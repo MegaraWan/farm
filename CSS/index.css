@@ -1,0 +1,272 @@
+
+header{
+    border-top: 0;
+    width:100%;
+    min-height: 900px;
+    position: relative; 
+    background-image: url(/img/nav-img01.jpg) ;
+    background-attachment: scroll;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+}
+
+/* src="/img/nav-img02.jpg
+src="/img/nav-img03.jpg */
+button:active{
+
+}
+.nav{
+    min-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img{
+    padding: 0px;
+}
+.nav-title{
+    width: 377px;
+    margin: 20px 0 0;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 36px;
+    text-align: center;
+}
+.nav-summary{
+    width: 360px;
+    color: #FFF;
+    text-align: justify;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+}
+
+.nav-bar{ 
+    display: flex;
+    align-items: center; 
+    position: relative;  
+}
+
+.button-click{
+    width: 50.03px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom:350px;
+    right: 50px;
+    /* nav按鈕盒子 */
+}
+.img-click{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background-color:rgba(0,0,0,0.5);
+    /* nav換照片按鈕 */
+ }
+nav{
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    /* align-content: center; */
+}
+
+.main-menu{
+    padding: 0px;
+    margin: 0px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+/* ul */
+}
+nav span{ 
+    writing-mode: vertical-lr;
+    width: 17px;
+    color: #FFF;
+    font-size: 12px;
+    /* 目錄字樣 */
+}
+
+.main-menu a{  
+    box-sizing: border-box;
+    width: 31px;
+    height: 120px;
+    padding-top:10px;
+    text-align: center;
+    background-color: white;
+}
+
+li:hover a{ 
+    color:white;
+    background-color: #401403;   
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+
+.animal-group{
+    margin-top: 150px;
+    overflow:hidden
+}
+.animal-title{
+    margin: 0;
+    padding-top: 55px;
+    padding-right: 90px;
+    writing-mode: vertical-lr;
+    text-orientation: sideways-right;
+    position: relative;   
+}
+.animal-group div::before {
+    position: absolute;
+    top:0px;
+}
+
+.animal-title span{
+    padding:50px 0 0;
+    position: absolute;
+    top: 8px;
+    right: 55px;
+}
+
+.animals{
+    padding:40px 0;
+    border-left: 1.5px solid black;
+    width: 877px;
+    display:flex; 
+}
+.animal-card{
+    font-weight: 400px;
+    width: 261.03px;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.number{
+    display: inline-block;
+    width: 261.03px;
+}
+.animal-card img{
+    border-radius: 50%; 
+    margin: 20px 0px;
+}
+.animal-name{
+    font-size: 32px;  
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.name-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name-ch{
+    font-size: 22px;
+}
+.name-ch::after{
+    content:'|';
+    color: black;
+}
+.name-en{
+    font-size: 17px;
+    align-self: flex-end;
+}
+
+.hbd{
+    color: #FFF;
+    font-family:'Work Sans', sans-serif;
+    display:inline-block;
+    /* 置中 */
+    line-height: 20px;  
+    width: 90px;
+    height: 20px;
+    text-align: center;
+    background-color:#985E3F;
+}
+.hbd-date{
+    color: #985E3F;
+}
+.animal-card p {
+    width: 230px;
+}
+.animal-introduction{
+    display:inline-block;
+    width: 250px;
+}
+/* width 設定太小會跑版 */
+
+.farm-card{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 250px;
+}
+
+.farm-text{
+    width: 35%;
+}
+.farm-text h2{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.farm-card:nth-child(even){
+    flex-direction: row-reverse;
+}
+.farm-img{
+    width: 728px;
+    right: 0;
+    position: relative;
+}
+.decoration{
+    position: absolute;
+    bottom: -60px;
+    right: -130px;
+}
+.farm-card:nth-child(odd) .decoration{
+    left: -130px;
+}
+
+.farm p{
+    width: 410px;
+}
+
+.read-more{
+    line-height: 30px; /* 187.5% */
+    letter-spacing: 0.8px;
+    width: 147px;
+    height: 36px;
+    border-radius: 18px;
+    border: 1px solid #000;
+    margin-top: 40px;
+    background-color:transparent;
+}
+
+.farm-card:nth-child(even) button{
+   float:right ;
+}

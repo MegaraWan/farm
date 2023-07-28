@@ -1,0 +1,111 @@
+
+
+section {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    line-height: 30px;
+    /* 187.5% */
+    letter-spacing: 0.8px;
+    width: 147px;
+    height: 36px;
+    margin-top: 15px;
+    border-radius: 18px;
+    border: 1px solid #000;
+    background-color: transparent;
+}
+:root {
+    --gap: 10px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: var(--gap);
+    padding-right: var(--gap); 
+    /* 這裡負責大小 */
+}
+
+.diy-group{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--gap) * -1);
+    margin-right: calc(var(--gap) * -1);
+    /* 這裡負責位置 拆成兩個處理 */
+    /* 設定margin怕版面跑版 譬如左邊六欄右邊四欄的時候 */
+}
+
+.card-diy {
+    text-align: center;
+}
+
+.card-diy img {
+    border-radius: 20px;
+}
+
+h3 {
+    margin: 15px 0px;
+    
+}
+
+.card-diy p {
+    margin: 0;
+}
+.card-camp{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    left: 200px;
+    position: relative;
+
+}
+.camp-text {
+    width: 610px;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 200px;
+    background: #D8E4ED;
+}
+.item{
+    width: 325px;
+}
+
+.title {
+    padding-left: 200px;
+    display: flex;
+}
+
+h2 {
+    margin: 0px 8px 0px 0px;
+}
+
+.item span {
+    font-size: 22px;
+}
+.item>p{
+    width: 324px;
+
+}
+hr{
+    margin: 0;
+    width: 324px;
+}
+
+.camp-img{
+    position: absolute;
+    top: -50px;
+    left:-400px
+}
+.main-camp{
+    top:-10px;
+    left: -30px;
+}
+
+.dec-farm01{
+    left: -130px;
+}
