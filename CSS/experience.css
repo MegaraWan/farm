@@ -1,7 +1,5 @@
-
-
 section {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -9,36 +7,50 @@ section {
     align-items: center;
 }
 
-button {
-    line-height: 30px;
-    /* 187.5% */
-    letter-spacing: 0.8px;
+
+ section a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     width: 147px;
-    height: 36px;
-    margin-top: 15px;
+    height: 30px;
+    margin: 10px auto;
+    letter-spacing: 2px;
     border-radius: 18px;
     border: 1px solid #000;
     background-color: transparent;
 }
+
+
+section a:hover {
+    color: white;
+    background-color: #985E3F;
+    border: 1px solid #985E3F;
+}
+
 :root {
     --gap: 10px;
 }
 
-.container {
-    width: 100%;
+.diy-container {
+    width: 1200px;
     margin: 0 auto;
     padding-left: var(--gap);
-    padding-right: var(--gap); 
-    /* 這裡負責大小 */
+    padding-right: var(--gap);
+
 }
 
-.diy-group{
+.diy-group {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     margin-left: calc(var(--gap) * -1);
     margin-right: calc(var(--gap) * -1);
-    /* 這裡負責位置 拆成兩個處理 */
-    /* 設定margin怕版面跑版 譬如左邊六欄右邊四欄的時候 */
+
+}
+
+[class*="col-"] {
+    padding: 0 var(--gap);
+    box-sizing: border-box;
 }
 
 .card-diy {
@@ -50,62 +62,194 @@ button {
 }
 
 h3 {
-    margin: 15px 0px;
-    
+    margin: 15px 0px 10px;
+
 }
 
 .card-diy p {
     margin: 0;
 }
-.card-camp{
-    margin-top: 50px;
-    margin-bottom: 150px;
-    left: 200px;
-    position: relative;
+
+
+
+:root {
+    --gapfarm: 100px;
+}
+
+.camp-container {
+    width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
 
 }
-.camp-text {
-    width: 610px;
-    box-sizing: border-box;
-    margin: 0;
-    padding-left: 200px;
-    background: #D8E4ED;
+
+.camp-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: calc(var(--gap) * -1);
+    margin-right: calc(var(--gap) * -1);
 }
-.item{
-    width: 325px;
+
+.camp-card {
+    margin-top: 60px;
 }
 
 .title {
-    padding-left: 200px;
     display: flex;
+    margin-bottom: 10px;
+    padding-left: 10%
 }
 
 h2 {
     margin: 0px 8px 0px 0px;
 }
 
+.title p {
+    margin-bottom: 0;
+}
+
+.camp-inf {
+    width: 100%;
+    background: #D8E4ED;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-right: 15%;
+    padding-bottom: 30%;
+    margin-bottom: 150px;
+}
+
+section:nth-child(2) .camp-container:nth-of-type(4) .camp-inf{
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 0px;
+    background: transparent;
+} 
+section:nth-child(2) .camp-container:nth-of-type(4) .title{
+    justify-content: center;
+    margin-bottom:30px;
+    padding:0px;
+}   
+section:nth-child(2) .camp-container:nth-of-type(4) .camp-inf{
+    justify-content: center;
+    margin-bottom: 0px;
+    padding: 0px;
+    background: transparent;
+} 
+
+
+.camp-inf a {
+    float: right;
+    margin: 50px 0;
+}
+
+.rectangle {
+    width: 48%;
+    height: 100%;
+    background: #D8E4ED;
+    position: absolute;
+    transform: translateX(-100%);
+    top: 0;
+    z-index: -1;
+}
+
+.feat-price{
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 325px;
+}
+
 .item span {
     font-size: 22px;
 }
-.item>p{
-    width: 324px;
 
-}
-hr{
-    margin: 0;
-    width: 324px;
+.item p {
+    margin: 0px;
 }
 
-.camp-img{
+hr {
+    margin: 15px 0;
+    width: 324px;
+}
+.item-price{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between; 
+}
+
+.camp-img {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+[class*="dec-"] {
     position: absolute;
-    top: -50px;
-    left:-400px
-}
-.main-camp{
-    top:-10px;
-    left: -30px;
 }
 
-.dec-farm01{
-    left: -130px;
+.dec-farm01 {
+    top: -60px;
+    right: -40px;
+    transform: rotate(180deg)
+}
+
+.dec-farm02 {
+    bottom: -60px;
+    left: -50px;
+}
+
+.dec-garden {
+    bottom: 0px;
+    right: -20px;
+}
+
+.dec-camp {
+    top: -70px;
+    left: -50px;
+}
+
+.dec-play{
+    bottom: -60px;
+    left: -100px;
+}
+.slideshow{
+    display: flex;
+    overflow:hidden;
+}
+
+.img-small{
+    width: 230px;
+    margin: 5px;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+
+.dec-price {
+    top: -160px;
+    right: -150px;
+}
+
+.dec-menu {
+    bottom: 80px;
+    left: -100px;
+}
+
+.menu a {
+    margin: 50px 0px 50px auto;
+
 }

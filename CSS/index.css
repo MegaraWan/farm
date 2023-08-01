@@ -5,7 +5,7 @@ header{
     min-height: 900px;
     position: relative; 
     background-color: rgba(0,0,0,0);
-    background-image: url(/img/nav-img01.jpg) ;
+    background-image: url(../img/nav-img01.jpg) ;
     background-attachment: scroll;
     background-position: center;
     background-size:cover;
@@ -257,7 +257,7 @@ section{
     width: 410px;
 }
 
-.read-more{
+.read-more {
     line-height: 30px; /* 187.5% */
     letter-spacing: 0.8px;
     width: 147px;
@@ -267,6 +267,15 @@ section{
     margin-top: 40px;
     background-color:transparent;
 }
+button.read-more:hover { 
+    background-color: #985E3F;   
+    border: 1px solid #985E3F;
+}
+button.read-more:hover a{ 
+    color:white;
+    background-color: #985E3F;   
+}
+
 
 .farm-card:nth-child(even) button{
    float:right ;

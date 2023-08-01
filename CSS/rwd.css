@@ -1,11 +1,4 @@
 
-:root {
-    --gap: 10px;
-}
-[class*="col-"] {
-    padding: 0 var(--gap);
-    box-sizing: border-box;
-}
 
 .col-1 {
     width: 8.333333%;
