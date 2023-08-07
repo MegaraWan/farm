@@ -12,7 +12,11 @@ header{
     display: flex;
     justify-content: center;
 }
-
+@media screen and (max-with:768px) {
+    header{
+        width:50%;
+    }
+}
 /* src="/img/nav-img02.jpg
 src="/img/nav-img03.jpg */
 button:active{
