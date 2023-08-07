@@ -1,12 +1,63 @@
-main {
-    max-width: 1200px;
-    margin: 150px auto 0;
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
+
+:root {
+    --gap: 10px;
 }
 
-article{
-    width: 50%;
+.container {
+    max-width: 1200px;
+    margin: 150px auto;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+}
+
+.row{
+    display: flex;
+ 
+    margin-left: calc(var(--gap) * -1);
+    margin-right: calc(var(--gap) * -1);
+}
+.title{
+    margin-top: 50px;
+    width: 90%;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+.title img{
+    position: absolute;
+    bottom: 10px;
+}
+.title p{
+    margin: 30px 0;
+    font-size: 64px;
+    font-weight: bolder;
+}
+.ticket{
+    display:flex;
+    flex-wrap: wrap;
+    
+
+}
+
+.price{
+    width:120px;
+    height: 130px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight:bold;
+    border-right: 1px solid black;
+}
+
+.ticket .infor{
+    width: 70%;
+}
+
+.infor{
+    width: 80%;
+    padding: 20px;
+}
+.infor li{
+    margin: 5px 0px 0px -18px;
 }

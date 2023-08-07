@@ -1,0 +1,108 @@
+main{
+    margin: 150px 0;
+}
+
+:root {
+    --gap: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: calc(var(--gap) * -1);
+    margin-right: calc(var(--gap) * -1);
+}
+
+
+.me-profile{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.logo{
+    width: 191px;
+}
+
+.me-name{
+    margin: 5px 0;
+    font-size:40px;
+    
+}
+.me-price{
+    margin: 20px 0;
+    font-size:32px;
+}
+
+.me-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 16px;
+    gap: 8px
+}
+.me-menu-item{
+    width: 90px;
+    height: 60px;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: center;
+    background-color: #D8E4ED;
+}
+
+.me-menu-item i{
+    font-size:30px;
+}
+
+.me-page-form{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #D8E4ED;
+    border-radius: 5px;
+    padding: 30px 0 100px 0; 
+    position: relative; 
+}
+.dec{
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+}
+
+.me-page-title{
+    width:112px;
+    margin: 0 auto;
+    font-size: 28px;
+    font-weight: bold;
+}
+.form-group{
+    cursor: pointer;
+    margin: 40px;
+}
+.required-field{
+    font-size: 24px;
+    margin: 5px 0;
+}
+.form-item{
+height: 64px;
+padding: 0 20px;
+border-radius: 15px;
+background: #FFF;
+color: #9F9F9F;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
