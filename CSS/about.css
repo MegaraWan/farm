@@ -1,87 +1,96 @@
-@media screen and (min-width: 480px){
-
-}
-
-
-@media screen and (min-width: 768px){
-
-}
-
-@media screen and (min-width: 1000px){
-
-}
-
 main {
+    
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 15% auto;
 }
 
 
 section {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .map {
-    width: 900px;
+    width: 75%;
 }
 
+.google-group{
+    width: 80%;
+}
+.google{
+    display: block;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+    padding-bottom: 56.25%;
+}
 iframe {
-    width: 900px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 .parking, .bus {
-    width: 889px;
-    min-height: 540px;
+    width: 74%;
     margin: auto;
     background-color: white;
     box-shadow: 5px 5px 0px 2px #ADE2E6;
     border-radius: 10px;
-    margin: 150px 50px;
-    padding: 50px;
+    box-sizing: border-box;
+    margin: 12.5% 4.2%;
+    padding: 10%;
+    padding-bottom: 20%;
 }
 .parking ul, .bus ul{
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
 
 
 h2 {
-    margin: 0px 0px 50px;
+    margin: 0px 0px 5%;
 }
 
 h3 {
-    width: 200px;
     padding: 0;
-    margin: 22px 0px;
+    margin: 3% 0px;
 }
 
 p {
-    width: 660px;
     padding: 0px 0px 30px;
     right: 0;
     left: 0;
     margin: auto
 }
 
-.google,
+.google-group,
 .parking,
 .bus {
     position: relative;
 }
 
 .decoration {
+    width: 30%;
     position: absolute;
-    bottom: -40px;
-    right: -60px;
+    bottom: 3%;
+    right: -5%;
 }
 
-.google .decoration {
-    left: -80px;
+.bus-img{
+    width: 48%;
+}
+
+.google-group .decoration {
+    bottom: -5%;
+    left: -6.6%;
 }
 
 
@@ -92,9 +101,12 @@ p {
     grid-gap: 3px 3px;
     justify-items: center;
     align-items: center;
-    margin-bottom: 150px;
+    margin-bottom: 30px;
 }
-
+.waterfall-content{
+    width: 98%;
+    overflow :scroll;
+}
 .item1{
     grid-column-start: 1;
     grid-column-end: 3;
@@ -135,3 +147,18 @@ p {
     grid-row-start:3;
     grid-row-end: 5; 
 }
+
+
+@media screen and (min-width: 480px){
+
+}
+
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 1000px){
+
+}
+
