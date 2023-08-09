@@ -1,286 +1,453 @@
-
-header{
+header {
     border-top: 0;
-    width:100%;
-    min-height: 900px;
-    position: relative; 
-    background-color: rgba(0,0,0,0);
-    background-image: url(../img/nav-img01.jpg) ;
-    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../img/nav-img01.jpg);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     display: flex;
     justify-content: center;
+    position: relative;
 }
-@media screen and (max-with:768px) {
-    header{
-        width:50%;
-    }
-}
-/* src="/img/nav-img02.jpg
-src="/img/nav-img03.jpg */
-button:active{
 
+.navbar-toggle-label {
+    right: 10%;
 }
-.nav{
-    min-width: 1000px;
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: white;
+}
+
+.nav-group {
+    width: 80%;
+    margin: 0 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.nav-logo{
+/* src="/img/nav-img02.jpg
+src="/img/nav-img03.jpg */
+button:active {}
+
+.nav-logo {
+    width: 100%;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-header img{
+header img {
     padding: 0px;
+    width: 60%;
 }
-.nav-title{
-    width: 377px;
-    margin: 20px 0 0;
+
+.nav-title {
+    width: 300px;
+    margin: 10px 0 0 0;
     color: #FFF;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 2rem;
     text-align: center;
 }
-.nav-summary{
-    width: 360px;
+
+.nav-summary {
+    width: 70%;
     color: #FFF;
     text-align: justify;
-    font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 1.5;
 }
 
-.nav-bar{ 
+
+.nav-bar {
     display: flex;
-    align-items: center; 
-    position: relative;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.button-click{
-    width: 50.03px;
+.navbar-toggle-label {
+
+    top: 0;
+
+}
+
+.button-click {
+    width: 5.5rem;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    bottom:350px;
-    right: 50px;
+    margin-bottom: 1.5rem;
     /* nav按鈕盒子 */
 }
-.img-click{
+
+.img-click {
     margin: 0;
     padding: 0;
     border: 0;
     outline: none;
-    width: 10px;
-    height: 10px;
-    border-radius:50%;
-    background-color:rgba(0,0,0,0.5);
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.8);
     /* nav換照片按鈕 */
- }
-nav{
-    width: 330px;
-    display: flex;
-    justify-content: space-between;
-    /* align-content: center; */
 }
 
-.main-menu{
-    padding: 0px;
-    margin: 0px;
-    width: 280px;
-    display: flex;
-    justify-content: space-between;
-/* ul */
-}
-nav span{ 
-    writing-mode: vertical-lr;
-    width: 17px;
-    color: #FFF;
-    font-size: 12px;
-    /* 目錄字樣 */
-}
-
-.main-menu a{  
-    box-sizing: border-box;
-    width: 31px;
-    height: 120px;
-    padding-top:10px;
-    text-align: center;
+nav {
     background-color: white;
 }
 
-li:hover a{ 
-    color:white;
-    background-color: #401403;   
+.main-menu {
+    padding: 0px;
+    margin: 0px auto;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    /* ul */
 }
 
+nav span {
+    display: none;
+    /* 目錄字樣 */
+}
+
+.main-menu a {
+    background-color: white;
+}
+
+li:hover a {
+    color: white;
+    background-color: #401403;
+}
 
 main {
     max-width: 1200px;
     margin: 0 auto;
 }
-section{
+
+section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
-.animal-group{
-    margin-top: 150px;
-    overflow:hidden
-}
-.animal-title{
-    margin: 0;
-    padding-top: 55px;
-    padding-right: 90px;
-    writing-mode: vertical-lr;
-    text-orientation: sideways-right;
-    position: relative;   
-}
-.animal-group div::before {
-    position: absolute;
-    top:0px;
+
+
+.animals {
+    width: 80%;
+    display: flex;
+    overflow: hidden
 }
 
-.animal-title span{
-    padding:50px 0 0;
-    position: absolute;
-    top: 8px;
-    right: 55px;
-}
-
-.animals{
-    padding:40px 0;
-    border-left: 1.5px solid black;
-    width: 877px;
-    display:flex; 
-}
-.animal-card{
+.animal-card {
     font-weight: 400px;
-    width: 261.03px;
-    margin: 30px;
+    width: 251px;
+    margin: 1.67rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
 }
-.number{
+
+.number {
     display: inline-block;
-    width: 261.03px;
+    width: 100%;
 }
-.animal-card img{
-    border-radius: 50%; 
-    margin: 20px 0px;
+
+.animal-card img {
+    max-width: 13.16rem;
+    border-radius: 50%;
+    margin: 1.12rem 0px;
 }
-.animal-name{
-    font-size: 32px;  
+
+.animal-name {
+    font-size: 1.77rem;
     margin-bottom: 10px;
     text-align: center;
 }
 
-.name-group{
+.name-group {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.name-ch{
-    font-size: 22px;
+.name-ch {
+    font-size: 1.22rem;
 }
-.name-ch::after{
-    content:'|';
+
+.name-ch::after {
+    content: '|';
     color: black;
 }
-.name-en{
-    font-size: 17px;
+
+.name-en {
+    font-size: 0.94rem;
     align-self: flex-end;
 }
 
-.hbd{
-    color: #FFF;
-    font-family:'Work Sans', sans-serif;
-    display:inline-block;
-    /* 置中 */
-    line-height: 20px;  
-    width: 90px;
-    height: 20px;
-    text-align: center;
-    background-color:#985E3F;
-}
-.hbd-date{
-    color: #985E3F;
-}
 .animal-card p {
-    width: 230px;
+    width: 100%;
 }
-.animal-introduction{
-    display:inline-block;
-    width: 250px;
-}
-/* width 設定太小會跑版 */
 
-.farm-card{
-    width: 1200px;
+.hbd-group {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 250px;
+    justify-content: center;
+    align-items: center;
 }
 
-.farm-text{
-    width: 35%;
+.hbd {
+    margin: 0 2px;
+    color: #FFF;
+    font-family: 'Work Sans', sans-serif;
+    display: inline-block;
+    /* 置中 */
+    line-height: 2rem;
+    width: 8.5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: #985E3F;
 }
-.farm-text h2{
-    margin-top: 20px;
+
+.hbd-date {
+    margin: 0 2px;
+    color: #985E3F;
+}
+
+.animal-introduction {
+    display: inline-block;
+    line-height: 1.5;
+    width: 95%;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+.farm-card {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+
+.farm-text {
+    width: 60%;
+    fl
+}
+
+.farm-text h2 {
+    margin-top: 1.11rem;
     margin-bottom: 0;
 }
-.farm-card:nth-child(even){
-    flex-direction: row-reverse;
-}
-.farm-img{
-    width: 728px;
+
+.farm-img-group {
+    width: 60%;
     right: 0;
+    margin-bottom: 5%;
     position: relative;
 }
-.decoration{
-    position: absolute;
-    bottom: -60px;
-    right: -130px;
-}
-.farm-card:nth-child(odd) .decoration{
-    left: -130px;
+
+.farm-img {
+    max-width: 100%;
 }
 
-.farm p{
-    width: 410px;
+.decoration {
+    width: 30%;
+    position: absolute;
+    bottom: -10%;
+    right: -15%;
+}
+
+.farm-card:nth-child(even) .decoration {
+    left: -15%;
+}
+
+.farm p {
+    width: 57%;
 }
 
 .read-more {
-    line-height: 30px; /* 187.5% */
+    line-height: 1.66rem;
     letter-spacing: 0.8px;
-    width: 147px;
-    height: 36px;
+    width: 118px;
+    height: 28px;
     border-radius: 18px;
     border: 1px solid #000;
-    margin-top: 40px;
-    background-color:transparent;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: transparent;
 }
-button.read-more:hover { 
-    background-color: #985E3F;   
+
+button.read-more:hover {
+    background-color: #985E3F;
     border: 1px solid #985E3F;
 }
-button.read-more:hover a{ 
-    color:white;
-    background-color: #985E3F;   
+
+button.read-more:hover a {
+    color: white;
+    background-color: #985E3F;
 }
 
 
-.farm-card:nth-child(even) button{
-   float:right ;
+
+
+@media screen and (min-width: 480px) {
+    header {
+        background-attachment: local;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    header {
+        background-attachment: local;
+    }
+    .nav-title {
+        font-size: 28px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        background-attachment: scroll;
+    }
+
+
+    .nav-group {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-logo {
+        width: 30%;
+        margin: 20px 0;
+    }
+
+
+
+    .nav-bar {
+        position: relative;
+    }
+
+    nav span {
+        display: block;
+        writing-mode: vertical-lr;
+        width: 17px;
+        color: #FFF;
+        font-size: 12px;
+        /* 目錄字樣 */
+    }
+
+    nav {
+        all: unset;
+    }
+
+    nav {
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        /* align-content: center; */
+    }
+
+    .main-menu {
+        padding: 0px;
+        margin: 0px;
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+        /* ul */
+    }
+
+    .main-menu a {
+        box-sizing: border-box;
+        width: 31px;
+        height: 120px;
+        padding-top: 10px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .button-click {
+        position: absolute;
+        bottom: 15%;
+        right: 50px;
+
+    }
+
+    .animal-group {
+        margin-top: 150px;
+        overflow: hidden
+    }
+
+    .animal-title {
+        margin: 0;
+        padding-top: 55px;
+        padding-right: 90px;
+        writing-mode: vertical-lr;
+        text-orientation: sideways-right;
+        position: relative;
+    }
+
+
+    .h1-ch {
+        padding: 50px 0 0;
+        position: absolute;
+        top: 8px;
+        right: 55px;
+    }
+
+    .animal-title .h1-en::before {
+        position: absolute;
+        top: 0px;
+    }
+
+    .animals {
+        width: 877.31px;
+        border-left: 1.5px solid black;
+    }
+
+    .hbd {
+        line-height: 1.12rem;
+        width: 5rem;
+        height: 1.12rem;
+    }
+    h2{
+        text-align: left;
+    }
+    .farm-card {
+        justify-content: space-between;
+    }
+
+    .farm-text {
+        width: 35%;
+    }
+
+    .read-more {
+        width: 147px;
+        height: 36px;
+        margin-left: 0;
+    }
+
+    .farm-card:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .farm-card:nth-child(odd) button {
+        display: block;
+        margin-right: 0;
+        margin-left: auto;
+    }
 }

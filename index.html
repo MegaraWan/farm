@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>毛友農場 Furry Friend</title>
+    <title>毛友農場 Furry Friend | 首頁</title>
     <script src="https://kit.fontawesome.com/82d8748d0e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +19,15 @@
     <div class="wrapper">
         <div class="content">
             <header>
-                <div class="nav">
+                <div class="nav-group">
                     <div class="nav-logo">
                         <img src="img/nav-logo.png" alt="">
                         <p class="nav-title">Feeding the future.</p>
                         <p class="nav-summary">始終堅持天然純淨的理念，與環境共生、與生態共榮；敬天地，護自然 ，邀請您一起，堅持初衷，擇善共好。</p>
                     </div>
+
                     <div class="nav-bar">
+                        <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
                         <nav>
                             <ul class="main-menu">
                                 <li><a href="#">會員登入</a></li>
@@ -47,22 +49,23 @@
 
                             </button>
                         </div>
+
                     </div>
                 </div>
-
+                <label class="navbar-toggle-label" for="navbar-toggle">
+                    <span class="hamburger"></span>
+                  </label>
             </header>
             <main>
-                <section class="animal-group">
-
+                <section class="animal-group" >
                     <h1 class="animal-title">
-                        <span>毛友們</span>
-                        <div>FRIENDS</div>
+                        <span class="h1-ch">毛友們</span>
+                        <span class="h1-en">FRIENDS</span>
                     </h1>
-
                     <div class="animals">
                         <div class="animal-card">
                             <span class="number">01</span>
-                            <img src="img/main-img-sheep.jpg" alt="瓦萊黑鼻羊">
+                            <img src="img/main-img-sheep.jpg" alt="瓦萊黑鼻羊">                  
                             <div>
                                 <h2 class="animal-name">瓦萊黑鼻羊</h2>
                                 <div class="name-group">
@@ -72,8 +75,10 @@
                             </div>
 
                             <p>
-                                <span class="hbd">BIRTHDAY</span>
-                                <span class="hbd-date">2020.06.23</span>
+                                <span class="hbd-group">
+                                    <span class="hbd">BIRTHDAY</span>
+                                    <span class="hbd-date">2020.06.23</span>
+                                </span>
                                 <span class="animal-introduction">貪吃的Smiley會為了啃食樹葉攀爬樹幹和園區的假山。</span>
                             </p>
                         </div>
@@ -88,8 +93,10 @@
                                 </div>
                             </div>
                             <p>
-                                <span class="hbd">BIRTHDAY</span>
-                                <span class="hbd-date">2020.07.09</span>
+                                <span class="hbd-group">
+                                    <span class="hbd">BIRTHDAY</span>
+                                    <span class="hbd-date">2020.07.09</span>
+                                </span>
                                 <span class="animal-introduction">好奇心十足的Bubbles，常要保育員帶著到處蹓躂探險。</span>
                             </p>
                         </div>
@@ -104,8 +111,10 @@
                                 </div>
                             </div>
                             <p>
-                                <span class="hbd">BIRTHDAY</span>
-                                <span class="hbd-date">2020.02.23</span>
+                                <span class="hbd-group">
+                                    <span class="hbd">BIRTHDAY</span>
+                                    <span class="hbd-date">2020.02.23</span>
+                                </span>
                                 <span class="animal-introduction">身材小巧游泳健將的Oliver，常常在池塘跟夥伴們玩水嬉戲。</span>
                             </p>
                         </div>
@@ -120,8 +129,10 @@
                                 </div>
                             </div>
                             <p>
-                                <span class="hbd">BIRTHDAY</span>
-                                <span class="hbd-date">2020.05.17</span>
+                                <span class="hbd-group">
+                                    <span class="hbd">BIRTHDAY</span>
+                                    <span class="hbd-date">2020.05.17</span>
+                                </span>
                                 <span class="animal-introduction">愛家的Timon，站直身體觀察四周，是最可愛且盡責的守衛兵。</span>
                             </p>
                         </div>
@@ -135,9 +146,11 @@
                                     <span class="name-en">Reno</span>
                                 </div>
                             </div>
-                            <p>
-                                <span class="hbd">BIRTHDAY</span>
-                                <span class="hbd-date">2022.04.07</span>
+                            <p> 
+                                <span class="hbd-group">
+                                    <span class="hbd">BIRTHDAY</span>
+                                    <span class="hbd-date">2022.04.07</span>
+                                </span>
                                 <span class="animal-introduction">於2020年救援的Reno，已經學會飛行，在餐廳跟大家見面囉！</span>
                             </p>
                         </div>
@@ -151,21 +164,28 @@
                                     <span class="name-en">Kyorochan</span>
                                 </div>
                             </div>
-                            <p>
-                                <span class="hbd">BIRTHDAY</span>
-                                <span class="hbd-date">2020.04.21</span>
+                            <p> 
+                                <span class="hbd-group">
+                                    <span class="hbd">BIRTHDAY</span>
+                                    <span class="hbd-date">2020.04.21</span>
+                                </span>
                                 <span class="animal-introduction">愛閃亮亮東西的Kyorochan，把東西收好，不然會被我偷走喔。</span>
                             </p>
                         </div>
-                    </div>
+                    </div>   
                 </section>
                 <section>
                     <h1>
-                        <span>農場特色</span>
-                        <div>FEATURE</div>
+                        <span class="h1-ch">農場特色</span>
+                        <span class="h1-en">FEATURE</span>
                     </h1>
                     <div class="farm-group">
                         <div class="farm-card">
+                            <div class="farm-img-group">
+                                <img class="farm-img"src="img/main-img-bbq.jpg" alt="BBQ">
+                                <img class="decoration" src="img/decoration-img-capybara01.png" alt="水豚裝飾">
+                            </div>
+                            
                             <div class="farm-text">
                                 <h2>蒙古包烤肉區</h2>
                                 <p>
@@ -175,12 +195,12 @@
                                     <a href="">READ MORE</a>
                                 </button>
                             </div>
-                            <div class="farm-img">
-                                <img src="img/main-img-bbq.jpg" alt="BBQ">
-                                <img class="decoration" src="img/decoration-img-capybara01.png" alt="水豚裝飾">
-                            </div>
                         </div>
                         <div class="farm-card">
+                            <div class="farm-img-group">
+                                <img class="farm-img" src="img/main-img-sunflower.jpg" alt="向日葵花田">
+                                <img class="decoration" src="img/decoration-img-capybara02.png" alt="水豚裝飾">
+                            </div>
                             <div class="farm-text">
                                 <h2>花田</h2>
                                 <p>
@@ -190,12 +210,12 @@
                                     <a href="">READ MORE</a>
                                 </button>
                             </div>
-                            <div class="farm-img">
-                                <img src="img/main-img-sunflower.jpg" alt="向日葵花田">
-                                <img class="decoration" src="img/decoration-img-capybara02.png" alt="水豚裝飾">
-                            </div>
                         </div>
                         <div class="farm-card">
+                            <div class="farm-img-group">
+                                <img class="farm-img" src="img/main-img-garden.jpg" alt="蔬果">
+                                <img class="decoration" src="img/decoration-img-capybara03.png" alt="水豚裝飾">
+                            </div>  
                             <div class="farm-text">
                                 <h2>蔬果田</h2>
                                 <p>
@@ -205,12 +225,12 @@
                                     <a href="">READ MORE</a>
                                 </button>
                             </div>
-                            <div class="farm-img">
-                                <img src="img/main-img-garden.jpg" alt="蔬果">
-                                <img class="decoration" src="img/decoration-img-capybara03.png" alt="水豚裝飾">
-                            </div>
                         </div>
                         <div class="farm-card">
+                            <div class="farm-img-group">
+                                <img class="farm-img" src="img/main-img-restautant.jpg" alt="餐廳">
+                                <img class="decoration" src="img/decoration-img-capybara04.png" alt="水豚裝飾">
+                            </div>
                             <div class="farm-text">
                                 <h2>餐廳</h2>
                                 <p>
@@ -220,10 +240,6 @@
                                     <a href="">READ MORE</a>
                                 </button>
                             </div>
-                            <div class="farm-img">
-                                <img src="img/main-img-restautant.jpg" alt="餐廳">
-                                <img class="decoration" src="img/decoration-img-capybara04.png" alt="水豚裝飾">
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -231,7 +247,7 @@
         </div>
     </div>
     <footer>
-        <img src="img/footer-logo.svg" alt="LOGO">
+        <a class="footer-logo" href="index.html"><img src="img/footer-logo.svg" alt="LOGO"></a>
         <div class="footer-information">
             <p>
                 電話：03-367-2888<br>
@@ -256,7 +272,7 @@
                 </a>
             </div>
             <label for="email">訂閱我們 SUBSCRIBE US</label>
-            <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+            <input type="email" id="email" pattern=".+@globex\.com" size="20" required>
         </div>
     </footer>
 </body>
