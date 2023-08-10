@@ -1,6 +1,6 @@
 main{
     max-width: 1200px;
-    margin: 10% auto;
+    margin: 20% auto;
 }
 
 :root {
@@ -17,6 +17,7 @@ main{
 .row{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: calc(var(--gap) * -1);
     margin-right: calc(var(--gap) * -1);
 }
@@ -29,13 +30,13 @@ main{
     position: relative;
 }
 .title img{
-    width: 13%;
+    width: 18%;
     position: absolute;
     bottom: 3%;
 }
 .title p{
     margin: 1rem 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 .ticket{
@@ -48,25 +49,31 @@ main{
 .price{
     width:25%;
     height:22%;
+    margin: auto 2%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight:bold;
     
 }
 
 
 [class*="infor-"]{
-    padding: 0 20px;
+    padding: 0 3%;
 }
 
 .infor-ticket{
-    width: 60%;
+    width: 70%;
+    min-height:100px;
+    box-sizing: border-box;
     border-left: 1px solid black;
 }
 
+.information{
+    margin-top: 8%;
+}
 .infor-notice{
     width: 90%;
     margin-bottom:8%;
@@ -78,24 +85,30 @@ main{
 
 @media screen and (min-width: 400px){
     .title img{
-        width: 10%;
+        width: 13%;
     }
 }
 
 @media screen and (min-width: 500px){
     .title img{
-        width: 8%;
+        width: 13%;
     }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 700px){
     .title img{
-        width: 7%;
+        width: 10%;
     }
 }
 
 @media screen and (min-width: 1024px){
     .title img{
         width: 16%;
+    }
+    main{
+        margin: 15% auto;
+    }
+    .information{
+        margin-top: 0;
     }
 }

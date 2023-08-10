@@ -1,6 +1,6 @@
 main {
     max-width: 1200px;
-    margin: 5% auto 10% auto;
+    margin: 10% auto 10% auto;
 }
 
 section {
@@ -310,6 +310,10 @@ hr {
     section a{
         width: 147px;
         height: 30px;
+    }
+
+    main {
+        margin-top: 5%
     }
     .card-diy {
         margin-bottom: 0;
