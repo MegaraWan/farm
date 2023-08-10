@@ -19,6 +19,7 @@ header {
 .hamburger::before,
 .hamburger::after {
     background: white;
+    height: 8%;
 }
 
 .nav-group {

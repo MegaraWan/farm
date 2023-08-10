@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>毛友農場 Furry Friend</title>
+    <title>毛友農場 Furry Friend | 農場體驗</title>
     <script src="https://kit.fontawesome.com/82d8748d0e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,59 +20,36 @@
     <div class="wrapper">
         <div class="content">
             <header>
-                <img src="img/nav-bar-logo.svg" alt="logo">
+                <a class=head-logo href="index.html">
+                    <img src="img/nav-bar-logo.svg" alt="logo">
+                </a>
                 <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
                 <nav>
-                <ul class="main-menu">
-                    <li><a href="#"><i class="fa-solid fa-user-gear" style="color: #401403;"></i></a></li>
-                    <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a></li>
-                    <li><a href="#">活動預約</a></li>
-                    <li>
-                        <a href="ticket.html">購票資訊</a>
-                        <!-- <ul class="sub-menu">
-                            <li><a href="#">票價說明</a></li>
-                            <li><a href="#">開放時間</a></li>
-                            <li><a href="#">入園須知</a></li>
-                            <li><a href="#">衣著裝備</a></li>
-                        </ul> -->
-                    </li>
-                    <li><a href="experience.html">農場體驗</a>
-                        <!-- <ul class="sub-menu">
-                            <li><a href="#">手作小物</a></li>
-                            <li><a href="#">露營區</a></li>
-                            <li><a href="#">餐廳</a></li>
-                        </ul> -->
-                    </li>
-                    <li><a href="about.html">關於農場</a>
-                        <!-- <ul class="sub-menu">
-                            <li><a href="#park-map">園區地圖</a></li>
-                            <li><a href="#traffic">交通指南</a></li>
-                            <li><a href="#attractions">附近景點</a></li>
-                        </ul> -->
-                    </li>
-                    <!-- <li><a href="index.html">回首頁</a>
-                        <ul class="sub-menu">
-                            <li class=><a href="#">毛友們</a></li>
-                            <li><a href="#">農場特色</a></li>
-                        </ul>
-                    </li> -->
-                </ul>
-            </nav>
-            <label class="navbar-toggle-label" for="navbar-toggle">
-                <span class="hamburger"></span>
-              </label>
+                    <ul class="main-menu">
+                        <li><a href="#"><i class="fa-solid fa-user-gear" style="color: #401403;"></i></a></li>
+                        <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a>
+                        </li>
+                        <li><a href="#">活動預約</a></li>
+                        <li><a href="ticket.html">購票資訊</a></li>
+                        <li><a href="experience.html">農場體驗</a></li>
+                        <li><a href="about.html">關於農場</a></li>
+                    </ul>
+                </nav>
+                <label class="navbar-toggle-label" for="navbar-toggle">
+                    <span class="hamburger"></span>
+                </label>
             </header>
             <main>
                 <section>
                     <h1>
-                        <span>手作小物</span>
-                        <div>HANDMADE</div>
+                        <span class="h1-ch">手作小物</span>
+                        <span class="h1-en">HANDMADE</span>
                     </h1>
                     <div class="diy-container">
                         <div class="diy-group">
-                            <div class="col-4">
+                            <div class="col-7 col-lg-4">
                                 <div class="card-diy">
-                                    <img src="img/flower.jpg" alt="花環">
+                                    <img class="diy-img" src="img/flower.jpg" alt="花環">
 
                                     <div>
                                         <h3>花環DIY</h3>
@@ -83,9 +60,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-7 col-lg-4">
                                 <div class="card-diy">
-                                    <img src="img/soap.jpg" alt="肥皂">
+                                    <img class="diy-img" src="img/soap.jpg" alt="肥皂">
                                     <div>
                                         <h3>香茅肥皂</h3>
                                         <p>製作時間：1.5hr&emsp;費用：$100/個</p>
@@ -95,9 +72,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-7 col-lg-4">
                                 <div class="card-diy">
-                                    <img src="img/candle.jpg" alt="蠟燭">
+                                    <img class="diy-img" src="img/candle.jpg" alt="蠟燭">
                                     <div>
                                         <h3>精油蠟燭</h3>
                                         <p>製作時間：1hr&emsp;費用：$250/個</p>
@@ -112,20 +89,20 @@
                 </section>
                 <section>
                     <h1>
-                        <span>露營區</span>
-                        <div>CAMPING</div>
+                        <span class="h1-ch">露營區</span>
+                        <sapan class="h1-en">CAMPING</span>
                     </h1>
 
                     <div class="camp-container">
                         <div class="camp-group">
-                            <div class="col-6">
+                            <div class="col-9 col-lg-6">
                                 <div class="camp-img">
                                     <img class="main-camp" src="img/farm.jpg" alt="蔬果採集">
                                     <img class="dec-farm01" src="img/decoration-farm.png" alt="蔬果採集裝飾">
                                     <img class="dec-farm02" src="img/decoration-farm.png" alt="蔬果採集裝飾">
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-12 col-lg-6">
                                 <div class="camp-card">
                                     <div class="title">
                                         <h2>野菜採集</h2>
@@ -178,14 +155,14 @@
 
                     <div class="camp-container">
                         <div class="camp-group">
-                            <div class="col-6">
+                            <div class="col-9 col-lg-6">
                                 <div class="camp-img">
                                     <img class="main-camp" src="img/garden.jpg" alt="花田">
                                     <img class="dec-garden" src="img/decoration-flower.png" alt="花田裝飾">
 
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-12 col-lg-6">
                                 <div class="camp-card">
                                     <div class="title">
                                         <h2>採集花卉</h2>
@@ -235,13 +212,13 @@
 
                     <div class="camp-container">
                         <div class="camp-group">
-                            <div class="col-6">
+                            <div class="col-9 col-lg-6">
                                 <div class="camp-img">
                                     <img class="main-camp" src="img/camping.jpg" alt="蒙古包">
                                     <img class="dec-camp" src="img/decoration-camping.png" alt="蒙古包裝飾">
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-12 col-lg-6">
                                 <div class="camp-card">
                                     <div class="title">
                                         <h2>蒙古包露營</h2>
@@ -289,13 +266,13 @@
 
                     <div class="camp-container">
                         <div class="camp-group">
-                            <div class="col-7">
+                            <div class="col-8 col-lg-7">
                                 <div class="camp-img">
-                                    <img class="img-large" src="img/animal-play01.jpg" alt="水獺餵食">
+                                    <img class="main-camp img-large" src="img/animal-play01.jpg" alt="水獺餵食">
                                     <img class="dec-play" src="img/decoration-animal.png" alt="動物互動裝飾">
                                 </div>
                             </div>
-                            <div class="col-5">
+                            <div class="col-12 col-lg-5">
                                 <div class="camp-card">
                                     <div class="title">
                                         <h2>動物體驗</h2>
@@ -328,20 +305,13 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="camp-container">
-                        <div class="camp-group">
-                            <div class="col-12">
-                                <div class="slideshow">
-                                    <img class="img-small" src="img/animal-play01.jpg" alt="水獺餵食">
-                                    <img class="img-small" src="img/animal-play02.jpg" alt="水豚餵食">
-                                    <img class="img-small" src="img/animal-play03.jpg" alt="大嘴鳥">
-                                    <img class="img-small" src="img/animal-play04.jpg" alt="狐蒙">
-                                    <img class="img-small" src="img/animal-play05.jpg" alt="笑笑羊">
-                                    <img class="img-small" src="img/animal-play06.jpg" alt="笑笑羊餵食">
-                                </div>
-                            </div>
-                        </div>
+                    <div class="slideshow">
+                        <img class="img-small" src="img/animal-play01.jpg" alt="水獺餵食">
+                        <img class="img-small" src="img/animal-play02.jpg" alt="水豚餵食">
+                        <img class="img-small" src="img/animal-play03.jpg" alt="大嘴鳥">
+                        <img class="img-small" src="img/animal-play04.jpg" alt="狐蒙">
+                        <img class="img-small" src="img/animal-play05.jpg" alt="笑笑羊">
+                        <img class="img-small" src="img/animal-play06.jpg" alt="笑笑羊餵食">
                     </div>
                 </section>
 
@@ -349,15 +319,16 @@
 
                 <section>
                     <h1>
-                        <span>餐廳mune</span>
-                        <div>PIZZA</div>
+                        <span class="h1-ch">餐廳mune</span>
+                        <span class="h1-en">PIZZA</span>
                     </h1>
 
-                    <div class="menu">
-                        <img src="img/menu.jpg" alt="菜單">
-                        <img class="dec-price" src="img/menu-price.png" alt="菜單價錢">
-                        <img class="dec-menu" src="img/decoration-menu.png" alt="菜單裝飾">
-
+                    <div class="menu-group">
+                        <div class="menu-img">
+                            <img class="menu" src="img/menu.jpg" alt="菜單">
+                            <img class="dec-price" src="img/menu-price.png" alt="菜單價錢">
+                            <img class="dec-menu" src="img/decoration-menu.png" alt="菜單裝飾">
+                        </div>
                         <div>
                             <a href="">點我預約</a>
                         </div>

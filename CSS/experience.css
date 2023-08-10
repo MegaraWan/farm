@@ -1,14 +1,6 @@
-@media screen and (min-width: 480px){
-
-}
-
-
-@media screen and (min-width: 768px){
-
-}
-
-@media screen and (min-width: 1000px){
-
+main {
+    max-width: 1200px;
+    margin: 5% auto 10% auto;
 }
 
 section {
@@ -25,8 +17,8 @@ section {
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 147px;
-    height: 30px;
+    width: 118px;
+    height: 28px;
     margin: 10px auto;
     letter-spacing: 2px;
     border-radius: 18px;
@@ -46,7 +38,8 @@ section a:hover {
 }
 
 .diy-container {
-    width: 1200px;
+    max-width: 1200px;
+    box-sizing: border-box;
     margin: 0 auto;
     padding-left: var(--gap);
     padding-right: var(--gap);
@@ -55,7 +48,9 @@ section a:hover {
 
 .diy-group {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin-left: calc(var(--gap) * -1);
     margin-right: calc(var(--gap) * -1);
 
@@ -68,9 +63,11 @@ section a:hover {
 
 .card-diy {
     text-align: center;
+    margin-bottom: 10%;
 }
 
-.card-diy img {
+.diy-img{
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -85,12 +82,9 @@ h3 {
 
 
 
-:root {
-    --gapfarm: 100px;
-}
 
 .camp-container {
-    width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
     padding-left: var(--gap);
@@ -108,15 +102,23 @@ h3 {
 
 .camp-card {
     margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .title {
     display: flex;
+    flex-direction: column;
+    margin:0 auto;
     margin-bottom: 10px;
-    padding-left: 10%
+    
+    
 }
 
 h2 {
+    
     margin: 0px 8px 0px 0px;
 }
 
@@ -125,17 +127,22 @@ h2 {
 }
 
 .camp-inf {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     background: #D8E4ED;
     position: relative;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
-    padding-top: 30px;
-    padding-right: 15%;
-    padding-bottom: 30%;
-    margin-bottom: 150px;
+    padding-top: 3%;
+    padding-bottom: 10%;
+    margin-bottom: 25%;
 }
+.camp-text{
+    width: 100%;
+}
+
 
 section:nth-child(2) .camp-container:nth-of-type(4) .camp-inf{
     justify-content: center;
@@ -157,18 +164,8 @@ section:nth-child(2) .camp-container:nth-of-type(4) .camp-inf{
 
 
 .camp-inf a {
-    float: right;
-    margin: 50px 0;
-}
-
-.rectangle {
-    width: 48%;
-    height: 100%;
-    background: #D8E4ED;
-    position: absolute;
-    transform: translateX(-100%);
-    top: 0;
-    z-index: -1;
+    margin: 50px 10% 50px auto;
+    /* 點我預約 */
 }
 
 .feat-price{
@@ -178,11 +175,12 @@ section:nth-child(2) .camp-container:nth-of-type(4) .camp-inf{
 }
 
 .item {
-    width: 325px;
+    width: 80%;
+    margin: 5% auto;
 }
 
 .item span {
-    font-size: 22px;
+    font-size:1.22rem;
 }
 
 .item p {
@@ -190,8 +188,8 @@ section:nth-child(2) .camp-container:nth-of-type(4) .camp-inf{
 }
 
 hr {
-    margin: 15px 0;
-    width: 324px;
+    margin: 15px auto;
+    width: 80%;
 }
 .item-price{
     display: flex;
@@ -199,45 +197,57 @@ hr {
     justify-content:space-between; 
 }
 
-.camp-img {
+.camp-img { 
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.main-camp{
+
+        width: 100%;
+}
 [class*="dec-"] {
     position: absolute;
 }
 
 .dec-farm01 {
-    top: -60px;
-    right: -40px;
+    width:23%;
+    top: -11%;
+    right: -9%;
     transform: rotate(180deg)
 }
 
 .dec-farm02 {
-    bottom: -60px;
-    left: -50px;
+    width:23%;
+    bottom: -13%;
+    left: -10%;
 }
 
 .dec-garden {
+    width: 38.5%;
     bottom: 0px;
-    right: -20px;
+    right: -3.4%;
 }
 
 .dec-camp {
-    top: -70px;
-    left: -50px;
+    width: 49%;
+    top: -11.67%;
+    left: -8.33%;
 }
 
 .dec-play{
-    bottom: -60px;
-    left: -100px;
+    width: 40%;
+    bottom: -10%;
+    left: -20%;
 }
+
+
 .slideshow{
+    width: 80%;
     display: flex;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .img-small{
@@ -245,24 +255,91 @@ hr {
     margin: 5px;
 }
 
-.menu {
-    position: relative;
+.menu-group { 
+    width: 80%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 150px;
+    
 }
-
+.menu-img{
+    position: relative;
+}
+.menu{
+    width: 100%;
+}
 .dec-price {
-    top: -160px;
-    right: -150px;
+    width: 28%;
+    top: -13%;
+    right: -12.5%;
 }
 
 .dec-menu {
-    bottom: 80px;
-    left: -100px;
+    width: 28%;
+    bottom:-9%;
+    left: -8.3%;
 }
 
-.menu a {
+.menu-group a {
     margin: 50px 0px 50px auto;
+
+}
+
+
+
+@media screen and (min-width: 480px){
+
+}
+
+
+@media screen and (min-width: 720px){
+    .title {
+        display: flex;
+        flex-direction: row;
+    }
+    .item {
+        width: 325px;
+    }
+    hr {
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px){
+    section a{
+        width: 147px;
+        height: 30px;
+    }
+    .card-diy {
+        margin-bottom: 0;
+    }
+    .title{
+        margin:0;
+        margin-bottom: 10px;
+        padding-left: 5%
+    }
+    .rectangle {
+        width: 49%;
+        height: 100%;
+        background: #D8E4ED;
+        position: absolute;
+        transform: translateX(-99%);
+        top: 0;
+        z-index: -1;
+    }
+    .camp-card {
+        justify-content:flex-start;
+    }
+    
+    .camp-inf {
+        width: 100%;
+        flex-direction: row-reverse;
+        padding-right: 15%;
+    }
+    .camp-inf a {
+        margin-right:0;
+
+    }
 
 }
