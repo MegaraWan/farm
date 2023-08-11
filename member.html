@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>毛友農場 Furry Friend</title>
+    <title>毛友農場 Furry Friend | 帳戶資料</title>
     <script src="https://kit.fontawesome.com/82d8748d0e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,60 +13,37 @@
     <link rel="stylesheet" href="CSS/reset-normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/rwd.css">
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/member.css">
 </head>
 
 <body>
     <div class="wrapper">
         <div class="content">
             <header>
-                <img src="img/nav-bar-logo.svg" alt="logo">
+                <a class=head-logo href="index.html">
+                    <img src="img/nav-bar-logo.svg" alt="logo">
+                </a>
                 <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
                 <nav>
-                <ul class="main-menu">
-                    <li><a href="#"><i class="fa-solid fa-user-gear" style="color: #401403;"></i></a></li>
-                    <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a></li>
-                    <li><a href="#">活動預約</a></li>
-                    <li>
-                        <a href="ticket.html">購票資訊</a>
-                        <!-- <ul class="sub-menu">
-                            <li><a href="#">票價說明</a></li>
-                            <li><a href="#">開放時間</a></li>
-                            <li><a href="#">入園須知</a></li>
-                            <li><a href="#">衣著裝備</a></li>
-                        </ul> -->
-                    </li>
-                    <li><a href="experience.html">農場體驗</a>
-                        <!-- <ul class="sub-menu">
-                            <li><a href="#">手作小物</a></li>
-                            <li><a href="#">露營區</a></li>
-                            <li><a href="#">餐廳</a></li>
-                        </ul> -->
-                    </li>
-                    <li><a href="about.html">關於農場</a>
-                        <!-- <ul class="sub-menu">
-                            <li><a href="#park-map">園區地圖</a></li>
-                            <li><a href="#traffic">交通指南</a></li>
-                            <li><a href="#attractions">附近景點</a></li>
-                        </ul> -->
-                    </li>
-                    <li><a href="index.html">回首頁</a>
-                        <!-- <ul class="sub-menu">
-                            <li class=><a href="#">毛友們</a></li>
-                            <li><a href="#">農場特色</a></li>
-                        </ul> -->
-                    </li>
-                </ul>
-            </nav>
-            <label class="navbar-toggle-label" for="navbar-toggle">
-                <span class="hamburger"></span>
-              </label>
+                    <ul class="main-menu">
+                        <li><a href="#"><i class="fa-solid fa-user-gear" style="color: #401403;"></i></a></li>
+                        <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a>
+                        </li>
+                        <li><a href="#">活動預約</a></li>
+                        <li><a href="ticket.html">購票資訊</a></li>
+                        <li><a href="experience.html">農場體驗</a></li>
+                        <li><a href="about.html">關於農場</a></li>
+                    </ul>
+                </nav>
+                <label class="navbar-toggle-label" for="navbar-toggle">
+                    <span class="hamburger"></span>
+                </label>
             </header>
             <main>
                 <article>
                     <div class="container">
-                        <div class="row">
-                            <div class="col-6">
+                        <div class="row-logo">
+                            <div class="col-9 col-lg-6">
                                 <div class="me-profile">
                                     <img class="logo" src="img/logo-green.png">
                                     <div class="me-desc">
@@ -76,7 +53,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-9 col-lg-4">
                                 <div class="me-menu">
                                     <a class="me-menu-item">
                                         <span class="nav-icon">
@@ -123,8 +100,8 @@
                     <form class="me-page-form">
                         <div class="me-page-title">帳戶資料</div>
                         <div class="container">
-                            <div class="row">
-                                <article class="col-5">
+                            <div class="row-form">
+                                <article class="col-9 col-lg-5">
                                     <div class="form-group">
                                         <div class="form-content">
                                             <div class="required-field">
@@ -159,7 +136,7 @@
                                         </div>
                                     </div>
                                 </article>
-                                <article class="col-5">
+                                <article class="col-9 col-lg-5">
                                     <div class="form-group" style="cursor: pointer;">
                                         <div class="form-content">
                                             <div class="required-field">
