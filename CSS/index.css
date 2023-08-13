@@ -4,6 +4,7 @@ header {
     height: 100%;
     background-color: rgba(0, 0, 0, 0);
     background-image: url(../img/nav-img01.jpg);
+    transition: background-image 0.5s ease-in-out;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -31,10 +32,6 @@ header {
     justify-content: center;
 }
 
-/* src="/img/nav-img02.jpg
-src="/img/nav-img03.jpg */
-button:active {}
-
 .nav-logo {
     width: 100%;
     margin: 20px auto;
@@ -43,6 +40,7 @@ button:active {}
     align-items: center;
     flex-direction: column;
 }
+
 
 header img {
     padding: 0px;
@@ -76,9 +74,7 @@ header img {
 }
 
 .navbar-toggle-label {
-
     top: 0;
-
 }
 
 .button-click {
@@ -89,7 +85,7 @@ header img {
     /* nav按鈕盒子 */
 }
 
-.img-click {
+.img-click{
     margin: 0;
     padding: 0;
     border: 0;
@@ -97,8 +93,11 @@ header img {
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     /* nav換照片按鈕 */
+}
+.img-click:hover{
+    cursor: pointer; 
 }
 
 nav {
@@ -113,6 +112,12 @@ nav {
     justify-content: space-between;
     /* ul */
 }
+.main-menu li {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.3s ease-in-out;
+}
+
 
 nav span {
     display: none;
@@ -140,13 +145,48 @@ section {
     align-items: center;
 }
 
+.carousel-group{
+    width: 80%;
+    box-sizing: border-box;
+    padding:0 3%;
+    position: relative;
+    overflow: hidden;
+}
+.fa-angle-right{
+    font-size:2rem;
+}
 
+.carousel-start,
+.carousel-end {
+    color: #696969;
+    border: 1px solid transparent;
+    background-color:transparent;
+    position: absolute;
+    top: 50%;  
+    z-index: 1; 
+}
+.carousel-start{
+    left: 0%;
+    z-index: 2;
+}
+.carousel-end{
+    right: 0%;
+    z-index: 2;
+}
+
+.carousel-start:hover,
+.carousel-end:hover{
+    color:black;
+    cursor: pointer; 
+    
+}
 
 .animals {
-    width: 80%;
+    width:100%;
     display: flex;
-    overflow: hidden
+    transition: transform 0.5s;
 }
+
 
 .animal-card {
     font-weight: 400px;
@@ -154,6 +194,7 @@ section {
     margin: 1.67rem;
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     justify-content: center;
 }
 
@@ -170,7 +211,7 @@ section {
 
 .animal-name {
     font-size: 1.77rem;
-    margin-bottom: 10px;
+    margin: 0.5rem 0;
     text-align: center;
 }
 
@@ -191,6 +232,7 @@ section {
 
 .name-en {
     font-size: 0.94rem;
+    line-height:1.22rem;
     align-self: flex-end;
 }
 
@@ -230,9 +272,10 @@ section {
     text-align: center;
 }
 
-h2{
+h2 {
     text-align: center;
 }
+
 .farm-card {
     max-width: 1200px;
     display: flex;
@@ -269,41 +312,30 @@ h2{
     right: -15%;
     animation-name: upAnimation;
     transform-origin: center bottom;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-delay: .5s;
 }
+
 @keyframes upAnimation {
     0% {
         transform: rotate(0deg);
-        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
     }
-
-    10% {
-        transform: rotate(-12deg);
-        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-    }
-
-    20% {
-        transform: rotate(12deg);
-        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-    }
-
-    28% {
-        transform: rotate(-10deg);
-        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
-    }
-
-    36% {
+    15% {
         transform: rotate(10deg);
-        transition-timing-function: cubic-bezier(0.755, .5, .855, .06)
     }
-
-
+    30% {
+        transform: rotate(0deg);
+    }
+    45% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
     100% {
         transform: rotate(0deg);
-        transition-timing-function: cubic-bezier(0.215, .61, .355, 1)
     }
 }
 
@@ -355,10 +387,11 @@ button.read-more:hover a {
     header {
         background-attachment: local;
     }
+
     .nav-title {
         font-size: 28px;
     }
-    
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -454,10 +487,13 @@ button.read-more:hover a {
         position: absolute;
         top: 0px;
     }
+    .carousel-group{
+        border-left: 1.5px solid black;
+        }
 
     .animals {
         width: 877.31px;
-        border-left: 1.5px solid black;
+        
     }
 
     .hbd {
@@ -465,9 +501,11 @@ button.read-more:hover a {
         width: 5rem;
         height: 1.12rem;
     }
-    h2{
+
+    h2 {
         text-align: left;
     }
+
     .farm-card {
         justify-content: space-between;
     }

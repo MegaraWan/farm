@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>毛友農場 Furry Friend | 帳戶資料</title>
+    <title>毛友農場 Furry Friend | 會員登入</title>
     <script src="https://kit.fontawesome.com/82d8748d0e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="CSS/reset-normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/rwd.css">
-    <link rel="stylesheet" href="CSS/reserve.css">
+    <link rel="stylesheet" href="CSS/login.css">
 </head>
 
 <body>
@@ -27,7 +27,8 @@
                 <nav>
                     <ul class="main-menu">
                         <li><a href="login.html"><i class="fa-solid fa-user" style="color: #401403;"></i></a></li>
-                        <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a></li>
+                        <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a>
+                        </li>
                         <li><a href="reserve.html">活動預約</a></li>
                         <li><a href="ticket.html">購票資訊</a></li>
                         <li><a href="experience.html">農場體驗</a></li>
@@ -39,26 +40,45 @@
                 </label>
             </header>
             <main>
-            <div class="calendar">
-                <h1>月曆</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>日</th>
-                            <th>一</th>
-                            <th>二</th>
-                            <th>三</th>
-                            <th>四</th>
-                            <th>五</th>
-                            <th>六</th>
-                        </tr>
-                    </thead>
-                    <tbody id="calendar-body">
-                        <!-- 日曆內容將由 JavaScript 填充 -->
-                    </tbody>
-                </table>
-            </div>
-            <script src="js/reserve.js"></script>
+                <article>
+                    <form class="login-form">
+                        <div class="container">
+                            <div class="row-form">
+                                <article class="col-11 col-md-8 col-lg-5">
+                                    <div class="logo">
+                                        <img src="img/logo-green.png" alt="LOGO">
+                                    </div>
+                                </article>
+                                <article class="col-11 col-md-8 col-lg-5">
+                                    <div class="login">
+                                        <div class="wellcome-group">
+                                            <span class="hi">歡迎回來</span>
+                                            <br>
+                                            <span class="new">新朋友?建立帳戶</span>
+                                        </div>
+                                        <div class="item" title="E-mail">
+                                            電子郵件
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </div>
+                                        <span class="forget">忘記密碼?</span>
+                                        <div class="item" title="密碼">
+                                            密碼
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </div> 
+                                        <input type="checkbox">記住我的帳號
+                                        <button class="login-bt">登入</button>
+                                        <span class="quick" >或快速登入</span>
+                                        <button class="google"><i class="fa-brands fa-square-google-plus" style="color: black;"></i></button>
+                                        <div class="login-item">
+                                        <button class="fb"> <i class="fa-brands fa-square-facebook" style="color: black;"></i></button>
+                                        <button class="line"><i class="fa-brands fa-line" style="color: black;"></i></button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        </from>
+                </article>
             </main>
         </div>
     </div>

@@ -81,8 +81,6 @@ h3 {
 }
 
 
-
-
 .camp-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -101,7 +99,7 @@ h3 {
 }
 
 .camp-card {
-    margin-top: 60px;
+    margin-top: 4%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -113,8 +111,7 @@ h3 {
     flex-direction: column;
     margin:0 auto;
     margin-bottom: 10px;
-    
-    
+    align-items: center;
 }
 
 h2 {
@@ -144,23 +141,18 @@ h2 {
 }
 
 
-section:nth-child(2) .camp-container:nth-of-type(4) .camp-inf{
+.camp-inf-specil{
     justify-content: center;
     margin-bottom: 0px;
     padding: 0px;
     background: transparent;
 } 
-section:nth-child(2) .camp-container:nth-of-type(4) .title{
+.title-specil{
     justify-content: center;
     margin-bottom:30px;
     padding:0px;
 }   
-section:nth-child(2) .camp-container:nth-of-type(4) .camp-inf{
-    justify-content: center;
-    margin-bottom: 0px;
-    padding: 0px;
-    background: transparent;
-} 
+
 
 
 .camp-inf a {
@@ -245,13 +237,28 @@ hr {
 
 
 .slideshow{
-    width: 80%;
-    display: flex;
+    margin: 5% 0;
+    width:90%;
+    min-height: 110px;
     overflow: hidden;
+    position: relative;
 }
-
+.slider-container {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    position: absolute;
+    top: 0; 
+}
+.small-list{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
 .img-small{
-    width: 230px;
+    width: 150px;
     margin: 5px;
 }
 
@@ -285,9 +292,14 @@ hr {
 }
 
 
-
 @media screen and (min-width: 480px){
-
+    .slideshow{
+        min-height: 168px;
+    }
+    
+    .img-small{
+        width: 230px;
+    }
 }
 
 
@@ -295,6 +307,10 @@ hr {
     .title {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
+    }
+    .title p {
+        margin-top: 0.7rem;
     }
     .item {
         width: 325px;
@@ -344,6 +360,25 @@ hr {
     .camp-inf a {
         margin-right:0;
 
+    }
+
+    .slideshow{
+        margin:0;
+    }
+    .animal-experience-group{
+        display: flex;
+        flex-direction: row;
+    }
+    .animal-play {
+        order: 0; /* 設定順序為1，將其放在後面 */
+    }
+    
+    .animal-experience {
+        order: 1; /* 設定順序為2，將其放在後面 */
+    }
+    
+    .slideshow {
+        order: 2; /* 設定順序為0，將其放在最前面 */
     }
 
 }
