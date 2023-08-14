@@ -104,7 +104,7 @@ main {
 .form-group {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(1, 1fr);
     padding: 1%;
     gap: 0.5rem;
@@ -147,16 +147,50 @@ hr{
     grid-column-start: 4;
     grid-column-end: 5;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sum{
+    font-size: 1.2rem;
+}
+.people{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
-.total .infor{
+
+.qty {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #aaa;
     font-size: 1.2rem;
-}
+    border-radius:10px;
+  }
+  
+  
+  input.qtyplus {
+    width: 35px;
+    height: 35px;
+    font-size: 1.7rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+  
+  input.qtyminus {
+    width: 35px;
+    height: 35px;
+    font-size: 1.7rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+
 .date{
-    grid-column-start: 5;
-    grid-column-end: 7;
+    grid-column-start: 7;
+    grid-column-end: 9;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -165,13 +199,23 @@ hr{
 .date .infor {
     font-size: 1rem;
 }
-.paid{
-    grid-column-start: 7;
-    grid-column-end: 8; 
+.delete{
+    grid-column-start: 9;
+    grid-column-end: 10; 
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+}
+.delete-button{
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+.fa-trash-can{
+    font-size: 25px;
 }
 
 

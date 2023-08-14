@@ -105,7 +105,7 @@ p {
 }
 .waterfall-content{
     width: 98%;
-    overflow :scroll;
+    overflow-x :scroll;
 }
 .item1{
     grid-column-start: 1;
