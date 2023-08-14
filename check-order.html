@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>毛友農場 Furry Friend | 帳戶資料</title>
+    <title>毛友農場 Furry Friend | 查詢訂單</title>
     <script src="https://kit.fontawesome.com/82d8748d0e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="CSS/reset-normalize.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/rwd.css">
-    <link rel="stylesheet" href="CSS/member.css">
+    <link rel="stylesheet" href="CSS/check-order.css">
 </head>
 
 <body>
@@ -27,8 +27,7 @@
                 <nav>
                     <ul class="main-menu">
                         <li><a href="login.html"><i class="fa-solid fa-user" style="color: #401403;"></i></a></li>
-                        <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a>
-                        </li>
+                        <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a></li>
                         <li><a href="reserve.html">活動預約</a></li>
                         <li><a href="ticket.html">購票資訊</a></li>
                         <li><a href="experience.html">農場體驗</a></li>
@@ -96,87 +95,105 @@
                         </div>
                     </div>
                 </article>
-                <article>
-                    <form class="me-page-form">
-                        <div class="me-page-title">
-                            帳戶資料
+                <article class="check-order">
+                        <div class="title">
+                            查詢訂單
                         </div>
                         <div class="container">
                             <div class="row-form">
-                                <article class="col-11 col-md-8 col-lg-5">
-                                    <div class="form-group">
-                                        <div class="form-content">
-                                            <div class="required-field">
-                                                <span>*</span>姓名
-                                            </div>
-                                            <div class="form-item" title="姓名">
-                                                OOO
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </div>
+                                <article class="scroll col-md-11">
+                                    <div class="form-group list-title-group">
+                                        <div class="order">
+                                            <p class="list-title">訂單</p>
+                                        </div>
+                                        <div class="total">
+                                            <p class="list-title">總金額</p>
+                                        </div>
+                                        <div class="date">
+                                            <p class="list-title">預約日期</p>
+                                        </div>
+                                        <div class="paid">
+                                            <p class="list-title">狀態</p>
                                         </div>
                                     </div>
+                                    <hr>
                                     <div class="form-group">
-                                        <div class="form-content">
-                                            <div class="required-field">
-                                                <span>*</span>生日
-                                            </div>
-                                            <div class="form-item" title="生日">
-                                                選擇生日
-                                                <i class="fa-solid fa-pencil"></i>
+                                        <div class="order">
+                                            <img src="https://fakeimg.pl/80x80/">
+                                            <div>
+                                                <p class="infor">
+                                                訂單編號 :123456<br>
+                                                訂購品項 :<br>
+                                                數量:<br>
+                                                <span class="paid-way">線上刷卡</span>
+                                                </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-content">
-                                            <div class="required-field">
-                                                <span>*</span>性別
-                                            </div>
-                                            <div class="form-item" title="性別">
-                                                選擇性別
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </div>
+                                        <div class="total">
+                                            <p class="infor">$600</p>
+                                        </div>
+                                        <div class="date">
+                                            <p class="infor">2023-08-09<br>
+                                            14:30</p>
+                                        </div>
+                                        <div class="paid">
+                                            <p class="infor">已付款</p>
                                         </div>
                                     </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <div class="order">
+                                            <img src="https://fakeimg.pl/80x80/">
+                                            <div>
+                                                <p class="infor">
+                                                訂單編號 :123456<br>
+                                                訂購品項 :<br>
+                                                數量:<br>
+                                                <span class="paid-way">線上刷卡</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="total">
+                                            <p class="infor">$600</p>
+                                        </div>
+                                        <div class="date">
+                                            <p class="infor">2023-08-09<br>
+                                            14:30</p>
+                                        </div>
+                                        <div class="paid">
+                                            <p class="infor">已付款</p>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <div class="order">
+                                            <img src="https://fakeimg.pl/80x80/">
+                                            <div>
+                                                <p class="infor">
+                                                訂單編號 :123456<br>
+                                                訂購品項 :<br>
+                                                數量:<br>
+                                                <span class="paid-way">線上刷卡</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="total">
+                                            <p class="infor">$600</p>
+                                        </div>
+                                        <div class="date">
+                                            <p class="infor">2023-08-09<br>
+                                            14:30</p>
+                                        </div>
+                                        <div class="paid">
+                                            <p class="infor">已付款</p>
+                                        </div>
+                                    </div>
+                                   
                                 </article>
-                                <article class="col-11 col-md-8 col-lg-5">
-                                    <div class="form-group">
-                                        <div class="form-content">
-                                            <div class="required-field">
-                                                <span>*</span>手機號碼
-                                            </div>
-                                            <div class="form-item" title="手機號碼">
-                                                xxxx-xxx-xxx
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-content">
-                                            <div class="required-field">
-                                                <span>*</span>E-mail
-                                            </div>
-                                            <div class="form-item" title="E-mail">
-                                                OOO@gamil.com
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="form-content">
-                                            <div class="required-field">
-                                                <span>*</span>暱稱
-                                            </div>
-                                            <div class="form-item" title="暱稱">
-                                                OOO
-                                                <i class="fa-solid fa-pencil"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <img class="dec" src="img/decoration-user.png" alt="貓頭鷹裝飾">
+                                <img class="dec" src="img/decoration-order.png" alt="貓頭鷹裝飾">
                             </div>
                         </div>
-                    </from>
+                  
                 </article>
             </main>
         </div>
