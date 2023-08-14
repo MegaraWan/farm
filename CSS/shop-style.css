@@ -1,0 +1,76 @@
+main {
+    margin: 15% 0;
+}
+
+:root {
+    --gap: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+}
+
+.row-form,
+.row-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: calc(var(--gap) * -1);
+    margin-right: calc(var(--gap) * -1);
+    
+}
+
+
+.me-profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.logo {
+    width: 31%;
+}
+
+.me-name {
+    margin: 1.1rem 0;
+    font-size: 2.2rem;
+
+}
+
+.me-price {
+    margin: 1.1rem 0;
+    font-size: 1.7rem;
+}
+
+.me-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    gap: 0.5rem;
+    margin-bottom: 5%;
+}
+
+.me-menu-item {
+    width: 90px;
+    height: 60px;
+    padding: 8px;
+    margin: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: center;
+    background-color: #D8E4ED;
+}
+
+.me-menu-item i {
+    font-size: 28px;
+}
