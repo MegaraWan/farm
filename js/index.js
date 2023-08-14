@@ -52,47 +52,32 @@ function handleButtonClick(index) {
     }, 2500);
 }
 
-// 自動輪播
-function startAutoChangeBackground() {
-    interval = setInterval(() => { //setInterval方法 固定延遲2.5，"重複"執行對應的程式碼
-        if (!paused) {
-            currentIndex = (currentIndex + 1) % backgroundImages.length;
-            changeBackgroundImage(currentIndex);
-        }
-    }, 2500); // 每2.5秒切换一次
-}
-startAutoChangeBackground();
 
+//動物卡片輪播
+let oUl = document.querySelector('.slider-container');
+let oLi = document.querySelectorAll('.slider-container li');
 
-
-//中間的點擊卡片事件
-const carouselStartBtn = document.querySelector('.carousel-start');
-const carouselEndBtn = document.querySelector('.carousel-end');
-const animalsContainer = document.querySelector('.animals');
-
-const cardWidth = document.querySelector('.animal-card').offsetWidth;
-let currentPosition = 0;
-
-carouselStartBtn.addEventListener('click', () => {
-    currentPosition += cardWidth;
-    if (currentPosition > 0) {
-        currentPosition = -cardWidth * (document.querySelectorAll('.animal-card').length - 1);
-    }
-    updateCarouselPosition();
+let ulWidth = 0;
+oLi.forEach(li => {
+    ulWidth += li.offsetWidth;
 });
 
-carouselEndBtn.addEventListener('click', () => {
-    currentPosition -= cardWidth;
-    if (currentPosition < -cardWidth * (document.querySelectorAll('.animal-card').length)) {
-        currentPosition = 0;
-    }
-    updateCarouselPosition();
-});
+oUl.innerHTML += oUl.innerHTML;
+oUl.style.width = ulWidth * 2 + 'px';
 
-function updateCarouselPosition() {
-    animalsContainer.style.transform = `translateX(${currentPosition}px)`;
+let position = 0;
+const slideSpeed = 2;
+
+function moveSlide() {
+    position -= slideSpeed;
+    if (position <= -ulWidth) {
+        position = 0;
+    }
+    oUl.style.left = position + 'px';
+    requestAnimationFrame(moveSlide);
 }
 
+moveSlide();
 
 
 

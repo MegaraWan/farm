@@ -156,7 +156,7 @@ section {
     font-size:2rem;
 }
 
-.carousel-start,
+/* .carousel-start,
 .carousel-end {
     color: #696969;
     border: 1px solid transparent;
@@ -179,16 +179,27 @@ section {
     color:black;
     cursor: pointer; 
     
-}
+} */
 
 .animals {
     width:100%;
     display: flex;
-    transition: transform 0.5s;
+    min-height: 350px;
+    overflow: hidden;
+    position: relative;
 }
 
-
+.slider-container {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    position: absolute;
+    top: 0; 
+}
 .animal-card {
+    list-style: none;
+    padding: 0px;
     font-weight: 400px;
     width: 251px;
     margin: 1.67rem;
@@ -524,7 +535,7 @@ button.read-more:hover a {
 
     .animals {
         width: 877.31px;
-        
+        min-height: 580px;
     }
 
     .hbd {

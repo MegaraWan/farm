@@ -10,6 +10,14 @@ article{
     justify-content: center;
     align-items: center;
 }
+.select-group{
+    width: 100%;
+}
+
+select{
+    width:20%;
+    margin: 5%;
+}
 .calendar {
     max-width: 600px;
     margin: 0 auto;
