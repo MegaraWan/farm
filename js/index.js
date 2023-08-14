@@ -52,6 +52,20 @@ function handleButtonClick(index) {
     }, 2500);
 }
 
+// 首頁自動輪播
+function startAutoChangeBackground() {
+    interval = setInterval(() => { //setInterval方法 固定延遲2.5，"重複"執行對應的程式碼
+        if (!paused) {
+            currentIndex = (currentIndex + 1) % backgroundImages.length;
+            changeBackgroundImage(currentIndex);
+        }
+    }, 2500); // 每2.5秒切换一次
+}
+startAutoChangeBackground();
+
+
+
+
 
 //動物卡片輪播
 let oUl = document.querySelector('.slider-container');
