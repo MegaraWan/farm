@@ -80,7 +80,7 @@ oUl.innerHTML += oUl.innerHTML;
 oUl.style.width = ulWidth * 2 + 'px';
 
 let position = 0;
-const slideSpeed = 2;
+const slideSpeed = 1;
 
 function moveSlide() {
     position -= slideSpeed;
