@@ -1,5 +1,5 @@
 main {
-    
+
     max-width: 1200px;
     margin: 15% auto;
 }
@@ -17,10 +17,11 @@ section {
     width: 75%;
 }
 
-.google-group{
+.google-group {
     width: 80%;
 }
-.google{
+
+.google {
     display: block;
     position: relative;
     height: 0;
@@ -28,6 +29,7 @@ section {
     padding: 0;
     padding-bottom: 56.25%;
 }
+
 iframe {
     position: absolute;
     height: 100%;
@@ -36,7 +38,8 @@ iframe {
     top: 0;
 }
 
-.parking, .bus {
+.parking,
+.bus {
     width: 74%;
     margin: auto;
     background-color: white;
@@ -47,11 +50,13 @@ iframe {
     padding: 10%;
     padding-bottom: 20%;
 }
-.parking ul, .bus ul{
+
+.parking ul,
+.bus ul {
     padding: 0;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 
@@ -85,7 +90,7 @@ p {
     right: -5%;
 }
 
-.bus-img{
+.bus-img {
     width: 48%;
 }
 
@@ -95,7 +100,7 @@ p {
 }
 
 
-.waterfall{
+.waterfall {
     display: grid;
     grid-template-columns: 248px 248px 60px 120px 43px 156px 291px;
     grid-template-rows: 330px 217px 130px 165px;
@@ -104,86 +109,160 @@ p {
     align-items: center;
     margin-bottom: 30px;
 }
-.waterfall-content{
+
+.waterfall-content {
     width: 98%;
-    overflow-x :scroll;
+    overflow-x: scroll;
 }
 
+[class*="item-"] {
+    position: relative;
+}
 
-.item-1{
+.item-1 {
     grid-column-start: 1;
     grid-column-end: 3;
-    position: relative;
-  }
+}
 
-.item-2{
+.item-2 {
     grid-column-start: 3;
-    grid-column-end:6;
-  }
-.item-3{
+    grid-column-end: 6;
+}
+
+.item-3 {
     grid-column-start: 6;
     grid-column-end: 8;
-  }
-.item-4{
-    grid-row-start:2;
-    grid-row-end: 4;  
 }
-.item-5{
-    grid-column-start:2;
+
+.item-4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.item-5 {
+    grid-column-start: 2;
     grid-column-end: 4;
 }
-.item-6{
-    grid-column-start:4;
-    grid-column-end: 7;  
-}
-.item-7{
-    grid-row-start:2;
-    grid-row-end: 5;  
-}
-.item-9{
-    grid-column-start:2;
-    grid-column-end: 5;  
-    grid-row-start:3;
-    grid-row-end: 5; 
-}
-.item-10{
-    grid-column-start:5;
-    grid-column-end: 7;  
-    grid-row-start:3;
-    grid-row-end: 5; 
+
+.item-6 {
+    grid-column-start: 4;
+    grid-column-end: 7;
 }
 
-[class*="item-"]:hover img{
-    opacity: 0.5;
-  }
-  .waterfall [class*="item-"] a {
-    display: block;
-    color: black;
-    font-weight: bolder;
-    display: none;
-    font-size: 24px;
+.item-7 {
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 
-.waterfall [class*="item-"]:hover a {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
-    display: block;
+.item-9 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.item-10 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.info {
+    opacity: 0;
     position: absolute;
-    top: 45%;
-    left: 43%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20%;
 }
-@media screen and (min-width: 480px){
 
+.view-name {
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.info button {
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.info:hover {
+    -webkit-transition: 500ms;
+    opacity: 1;
+}
+
+.more-item {
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    box-shadow: 5px 5px 0px 2px #ADE2E6;
+    border-radius: 10px;
+    padding: 5%;
+    position: fixed;
+    left: 30%;
+    top: 30%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+
+.more-inf img {
+    display: inline;
+    width: 200px;
+    height: 200px;
+    margin: 0 3% 3% 0;
+    float: left;
+}
+
+.more-inf p {
+    padding: 10px;
+}
+
+.image-container {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0 3% 3% 0;
+}
+
+.text-container{ 
+    /* width: calc(50% - 206px); */
+     /* 50% - width of image and margin */
+    padding: 10px;
+}
+
+.close {
+    color: gray;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 480px) {}
 
-}
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
     main {
         margin-top: 5%
     }
 }
-
