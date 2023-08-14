@@ -107,6 +107,7 @@ nav {
 }
 
 .main-menu li a {
+    width: 100%;
     display: block;
     font-family: 'Inter', sans-serif;
     color: #401403;

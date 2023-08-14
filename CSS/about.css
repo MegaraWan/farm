@@ -57,6 +57,7 @@ iframe {
 
 h2 {
     margin: 0px 0px 5%;
+    text-align: center;
 }
 
 h3 {
@@ -107,48 +108,70 @@ p {
     width: 98%;
     overflow-x :scroll;
 }
-.item1{
+
+
+.item-1{
     grid-column-start: 1;
     grid-column-end: 3;
+    position: relative;
   }
-.item2{
+
+.item-2{
     grid-column-start: 3;
     grid-column-end:6;
   }
-.item3{
+.item-3{
     grid-column-start: 6;
     grid-column-end: 8;
   }
-.item4{
+.item-4{
     grid-row-start:2;
     grid-row-end: 4;  
 }
-.item5{
+.item-5{
     grid-column-start:2;
     grid-column-end: 4;
 }
-.item6{
+.item-6{
     grid-column-start:4;
     grid-column-end: 7;  
 }
-.item7{
+.item-7{
     grid-row-start:2;
     grid-row-end: 5;  
 }
-.item9{
+.item-9{
     grid-column-start:2;
     grid-column-end: 5;  
     grid-row-start:3;
     grid-row-end: 5; 
 }
-.item10{
+.item-10{
     grid-column-start:5;
     grid-column-end: 7;  
     grid-row-start:3;
     grid-row-end: 5; 
 }
 
+[class*="item-"]:hover img{
+    opacity: 0.5;
+  }
+  .waterfall [class*="item-"] a {
+    display: block;
+    color: black;
+    font-weight: bolder;
+    display: none;
+    font-size: 24px;
+}
 
+.waterfall [class*="item-"]:hover a {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 43%;
+}
 @media screen and (min-width: 480px){
 
 }

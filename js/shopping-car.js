@@ -2,7 +2,7 @@ $(function () {
   // 增減數量
   $(".qtyplus").click(function () {
     let inputAdd = $(this).siblings(".qty");
-  //   console.log("inputAdd", inputAdd.val());
+    //   console.log("inputAdd", inputAdd.val());
     let currentValue = parseInt(inputAdd.val());
     // console.log("sum", $(this).siblings(".sum"));
     let sumElement = $(this).closest(".form-group").find(".sum");
@@ -11,16 +11,15 @@ $(function () {
     let price = priceElement.text();
     let originPrice = parseInt(sumElement.text());
     originPrice = 0;
-  //   console.log("originPrice", originPrice);
+    //   console.log("originPrice", originPrice);
     //點擊增加1
     inputAdd.val(currentValue + 1);
     //更新金額
-    let realPrice =(currentValue + 1) * price + originPrice;
-    sumElement.text("$"+realPrice);
+    let realPrice = (currentValue + 1) * price + originPrice;
+    sumElement.text("$" + realPrice);
     updateTotal();
   });
 
-   //減少數量
   $(".qtyminus").click(function () {
     let inputRemove = $(this).siblings(".qty");
     let lowValue = parseInt(inputRemove.val());
@@ -33,11 +32,20 @@ $(function () {
       let pic = $(this).closest(".form-group").prev("hr");
       pic.remove();
       $(this).closest(".form-group").remove();
-    } else {
-      //不為零就更新金額
-      let finalPrice = (lowValue - 1) * price + originPrice;
-      sumElement.text("$"+finalPrice);
+      updateTotal();
+      return; // 項目已刪除，所以停止進一步的處理
     }
+
+    let priceElement = $(this).closest(".form-group").find(".u-p");
+    let price = parseInt(priceElement.text().replace("$", ""));
+
+    //不為零就更新金額
+    let finalPrice = price * (lowValue - 1);
+    $(this)
+      .closest(".form-group")
+      .find(".sum")
+      .text("$" + finalPrice);
+
     updateTotal();
   });
 
@@ -53,10 +61,12 @@ $(function () {
   function updateTotal() {
     let total = 0;
     $(".sum").each(function () {
-      let price = parseInt($(this).text());
-      total += price;
+      let price = parseInt($(this).text().replace("$", ""));
+      if (!isNaN(price)) {
+        total += price;
+      }
     });
-    $(".amount span").text("$"+total);
+    $(".amount span").text("$" + total);
   }
 });
 

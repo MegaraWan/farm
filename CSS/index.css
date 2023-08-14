@@ -107,7 +107,7 @@ nav {
 .main-menu {
     padding: 0px;
     margin: 0px auto;
-    width: 280px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     /* ul */
@@ -402,6 +402,7 @@ h2 {
     margin: 0 auto;
     margin-top: 10%;
     background-color: transparent;
+    cursor: pointer;
 }
 
 button.read-more:hover {
@@ -414,8 +415,62 @@ button.read-more:hover a {
     background-color: #985E3F;
 }
 
+.more-item {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    box-shadow: 5px 5px 0px 2px #ADE2E6;
+    border-radius: 10px;
+    padding: 5%;
+    position: fixed;
+    left: 25%;
+    top: 25%;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
 
+.more-inf img {
+    display: inline;
+    width: 200px;
+    height: 200px;
+    margin: 0 3% 3% 0;
+    float: left;
+}
 
+.more-inf p {
+    padding: 10px;
+}
+
+.image-container {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0 3% 3% 0;
+}
+
+.text-container {
+    float: left;
+    /* width: calc(50% - 206px); */
+     /* 50% - width of image and margin */
+    padding: 10px;
+}
+
+.close {
+    color: gray;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 @media screen and (min-width: 480px) {
     header {
@@ -487,7 +542,7 @@ button.read-more:hover a {
         /* ul */
     }
 
-    .main-menu a {
+    .main-menu li a {
         box-sizing: border-box;
         width: 31px;
         height: 120px;
