@@ -11,7 +11,6 @@ main {
     margin: 0 auto;
     padding-left: var(--gap);
     padding-right: var(--gap);
-    overflow-x :auto;
 }
 
 .row-form,
@@ -75,9 +74,7 @@ main {
 .me-menu-item i {
     font-size: 1.67rem;
 }
-.scroll{
     
-}
 .check-order {
     margin: 0 10%;
     background-color: #D8E4ED;
@@ -97,6 +94,9 @@ main {
     text-align: center;
     font-size: 1.55rem;
     font-weight: bold;
+}
+.col-md-11{
+    overflow-x:scroll;
 }
 .scroll{
     min-width: 500px;

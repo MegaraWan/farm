@@ -1,3 +1,15 @@
+main {
+    width:100%;
+    margin: 15% 0;
+}
+article{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .calendar {
     max-width: 600px;
     margin: 0 auto;
@@ -23,4 +35,16 @@ td {
 
 h1 {
     margin-bottom: 20px;
+}
+@media screen and (min-width: 460px) {}
+
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+
+    main {
+        margin: 10% 0;
+    }
+
 }

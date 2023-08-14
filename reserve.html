@@ -27,7 +27,8 @@
                 <nav>
                     <ul class="main-menu">
                         <li><a href="login.html"><i class="fa-solid fa-user" style="color: #401403;"></i></a></li>
-                        <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a></li>
+                        <li><a href="member.html"><i class="fa-solid fa-cart-shopping" style="color: #401403;"></i></a>
+                        </li>
                         <li><a href="reserve.html">活動預約</a></li>
                         <li><a href="ticket.html">購票資訊</a></li>
                         <li><a href="experience.html">農場體驗</a></li>
@@ -39,26 +40,76 @@
                 </label>
             </header>
             <main>
-            <div class="calendar">
-                <h1>月曆</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>日</th>
-                            <th>一</th>
-                            <th>二</th>
-                            <th>三</th>
-                            <th>四</th>
-                            <th>五</th>
-                            <th>六</th>
-                        </tr>
-                    </thead>
-                    <tbody id="calendar-body">
-                        <!-- 日曆內容將由 JavaScript 填充 -->
-                    </tbody>
-                </table>
-            </div>
-            <script src="js/reserve.js"></script>
+                <article>
+                    <h1>
+                        <span class="h1-ch">活動預約</span>
+                        <span class="h1-en">RESERVE</span>
+                    </h1>
+                    <article>
+                        <select name="activity">
+                            <option>選擇活動</option>
+                            <option>野菜採集</option>
+                            <option>採集花卉</option>
+                            <option>蒙古包露營</option>
+                            <option>動物單獨互動</option>
+                            <option>動物餵食</option>
+                        </select>
+                        <select name="people">
+                            <option>大人人數</option>
+                            <option>1位</option>
+                            <option>2位</option>
+                            <option>3位</option>
+                            <option>4位</option>
+                            <option>5位</option>
+                            <option>6位</option>
+                            <option>7位</option>
+                            <option>8位</option>
+                            <option>9位</option>
+                            <option>10位</option>
+                        </select>
+                        <select name="people">
+                            <option>小孩人數</option>
+                            <option>1位</option>
+                            <option>2位</option>
+                            <option>3位</option>
+                            <option>4位</option>
+                            <option>5位</option>
+                            <option>6位</option>
+                            <option>7位</option>
+                            <option>8位</option>
+                            <option>9位</option>
+                            <option>10位</option>
+                        </select>
+                    </article>
+                    <article>
+                        <div class="calendar">
+                            <h1>月曆</h1>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>日</th>
+                                        <th>一</th>
+                                        <th>二</th>
+                                        <th>三</th>
+                                        <th>四</th>
+                                        <th>五</th>
+                                        <th>六</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="calendar-body">
+                                    <!-- 日曆內容將由 JavaScript 填充 -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <h2>時段</h2>
+
+                        </div>
+                    </article>
+                </article>
+                <script src="js/reserve.js"></script>
             </main>
         </div>
     </div>

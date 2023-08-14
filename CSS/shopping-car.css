@@ -11,7 +11,7 @@ main {
     margin: 0 auto;
     padding-left: var(--gap);
     padding-right: var(--gap);
-    overflow-x :auto;
+    overflow-x:scroll;
 }
 
 .row-form,
@@ -75,9 +75,8 @@ main {
 .me-menu-item i {
     font-size: 1.67rem;
 }
-.scroll{
-    
-}
+
+
 .check-order {
     margin: 0 10%;
     background-color: #D8E4ED;
@@ -151,7 +150,7 @@ hr{
     justify-content: center;
 }
 .sum{
-    font-size: 1.2rem;
+    color: red;
 }
 .people{
     grid-column-start: 5;
