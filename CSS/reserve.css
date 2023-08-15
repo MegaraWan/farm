@@ -7,8 +7,12 @@ article{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+h1{
+    margin:5% 0 5% 0;
 }
 .select-group{
     width: 100%;
@@ -17,6 +21,55 @@ article{
 select{
     width:20%;
     margin: 5%;
+}
+ul,
+li{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.image{
+	width: 100%;
+    height: 280px;
+}
+#sliderBoard{	/* div */
+	border: 1px solid #ccc;
+	width: 40%;
+	height: 349px;
+	margin: 5% auto;
+	overflow: hidden;
+}
+#img-group{	/* ul */
+	position: relative;
+}
+#img-group li{	/* li */	
+	float: left;
+}
+
+/* circle button */
+#change-Button{
+	border: 1px solid red;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+}
+#change-Button li{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #ccc;
+	display: inline-block;
+	margin: 8px;
+}
+#change-Button li.clicked{
+	background-color: #666;
+}
+.activity-group{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 .calendar {
     max-width: 600px;
@@ -47,6 +100,30 @@ h1 {
 .time{
     width: 100%;
 }
+.shop{
+    display: block;
+    position: sticky;
+    text-align: center;
+    line-height: 1.66rem;
+    letter-spacing: 0.8px;
+    width: 100%;
+    height: 30px;
+    border-radius: 18px;
+    border: 1px solid #000;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.shop:hover {
+    background-color: #985E3F;
+    border: 1px solid #985E3F;
+    color: white;
+}
+
+
 @media screen and (min-width: 460px) {}
 
 
