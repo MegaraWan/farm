@@ -200,40 +200,39 @@ p {
 }
 
 .more-item {
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    left: 0;
+    top: 0;
+    z-index: 2;
+    overflow: auto;
+    display: none;
+}
+.more-base{
+    width: 50%;
+    margin: auto;
     background-color: white;
     box-shadow: 5px 5px 0px 2px #ADE2E6;
     border-radius: 10px;
     padding: 5%;
-    position: fixed;
-    left: 30%;
-    top: 30%;
-    z-index: 1;
-    overflow: auto;
-    display: none;
+    position: relative;
 }
 
-.more-inf img {
-    display: inline;
+
+.image-container {  
     width: 200px;
     height: 200px;
     margin: 0 3% 3% 0;
     float: left;
 }
-
-.more-inf p {
-    padding: 10px;
+.image-container img {
+    width:100% ;  
 }
-
-.image-container {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 0 3% 3% 0;
-}
-
-.text-container{ 
+.text-container {
+    /* float: left; */
     /* width: calc(50% - 206px); */
      /* 50% - width of image and margin */
     padding: 10px;
@@ -254,8 +253,6 @@ p {
     text-decoration: none;
     cursor: pointer;
 }
-
-
 @media screen and (min-width: 480px) {}
 
 
