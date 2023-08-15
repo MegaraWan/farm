@@ -504,8 +504,6 @@ button.read-more:hover a {
         margin: 20px 0;
     }
 
-
-
     .nav-bar {
         position: relative;
     }
@@ -513,6 +511,7 @@ button.read-more:hover a {
     nav span {
         display: block;
         writing-mode: vertical-lr;
+        margin-left: 10px;
         width: 17px;
         color: #FFF;
         font-size: 12px;
@@ -546,6 +545,10 @@ button.read-more:hover a {
         padding-top: 10px;
         text-align: center;
         background-color: white;
+    }
+    .main-menu li a:hover{
+        color: white;
+        background-color: #401403;
     }
 
     .button-click {
