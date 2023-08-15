@@ -9,7 +9,7 @@
 }
 
 .dec {
-    width: 20%;
+    width: 90px;
     position: absolute;
     right: 0;
     bottom: -5%;
@@ -201,7 +201,9 @@ input.qtyminus {
 
 
 @media screen and (min-width: 768px) {}
-
+.dec {
+    width: 20%;
+}
 
 @media screen and (min-width: 1024px) {
     .check-order {

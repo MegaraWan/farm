@@ -184,7 +184,7 @@ section {
 .animals {
     width:100%;
     display: flex;
-    min-height: 350px;
+    min-height: 530px;
     overflow: hidden;
     position: relative;
 }
@@ -297,7 +297,6 @@ h2 {
 
 .farm-text {
     width: 60%;
-    fl
 }
 
 .farm-text h2 {
