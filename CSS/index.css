@@ -524,7 +524,7 @@ button.read-more:hover a {
     }
 
     nav {
-        width: 330px;
+        width: 350px;
         display: flex;
         justify-content: space-between;
         /* align-content: center; */
@@ -533,7 +533,7 @@ button.read-more:hover a {
     .main-menu {
         padding: 0px;
         margin: 0px;
-        width: 280px;
+        width: 350px;
         display: flex;
         justify-content: space-between;
         /* ul */
