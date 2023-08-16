@@ -22,7 +22,7 @@
     font-weight: bold;
 }
 .scroll-set{
-    overflow-x:scroll !important;
+    overflow-x:scroll;
 }
 .scroll{
     min-width: 500px;
