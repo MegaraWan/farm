@@ -22,7 +22,7 @@
 }
 
 .scroll-set {
-    overflow-x: scroll !important;
+    overflow-x: scroll ;
 }
 
 .scroll {
