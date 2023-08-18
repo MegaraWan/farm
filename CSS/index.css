@@ -437,20 +437,18 @@ button.read-more:hover a {
 }
 
 
-.image-container {  
-    width: 200px;
-    height: 200px;
+.more-img {  
+    width:200px;  
     margin: 0 3% 3% 0;
     float: left;
+    /* clear:left; */
 }
-.image-container img {
-    width:100% ;  
-}
-.text-container {
-    /* float: left; */
-    /* width: calc(50% - 206px); */
-     /* 50% - width of image and margin */
-    padding: 10px;
+
+.more-text{
+        /* width: calc(50% - 206px);
+     /* 50% - width of image and margin*/
+     padding: 10px; 
+    display: block;
 }
 
 .close {
