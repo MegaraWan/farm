@@ -21,9 +21,9 @@ const buttons = document.querySelectorAll('.button-click button');
 const header = document.querySelector("header");
 
 const backgroundImages = [
-    "url(../img/nav-img001.jpg)",
-    "url(../img/nav-img002.jpg)",
-    "url(../img/nav-img003.jpg)"
+    "url(../../img/nav-img001.jpg)",
+    "url(../../img/nav-img002.jpg)",
+    "url(../../img/nav-img003.jpg)"
 ];
 
 let currentIndex = 0; // 按按鈕後重設輪播起點
